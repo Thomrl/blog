@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: https://thomrl.github.io/blog/sitemap.xml

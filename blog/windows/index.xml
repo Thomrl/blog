@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on Thomrl&#39;s Blog</title>
+    <link>https://thomrl.github.io/blog/blog/windows/</link>
+    <description>Recent content in windows on Thomrl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2024, Thomrl.</copyright>
+    <lastBuildDate>Fri, 11 Oct 2024 13:52:14 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows - First Steps</title>
+      <link>https://thomrl.github.io/blog/windows-first-steps/</link>
+      <pubDate>Fri, 11 Oct 2024 13:52:14 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/windows-first-steps/</guid>
+      <description>Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.
+Go to Microsoft Store and make sure things in there is updated.
+Run Chris Titus Tech&amp;rsquo;s Windows Utility (Github link). Here I:
+Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed. Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends.</description>
+    </item>
+    
+    <item>
+      <title>Windows Useful Software Tips and Tricks</title>
+      <link>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</link>
+      <pubDate>Fri, 11 Oct 2024 13:13:12 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</guid>
+      <description>Here are things I use to get things done faster in windows. They offer quality of life and makes things less of a hassle. All for free. I will add more over time.
+Ninite Ninite is a great tool. You go to the website https://ninite.com/ pick the apps you want on your computer, and then you go down and press &amp;ldquo;Get Your Ninite&amp;rdquo;. It will download a Ninite installer which will automatically download and install the apps you picked to be installed.</description>
+    </item>
+    
+  </channel>
+</rss>

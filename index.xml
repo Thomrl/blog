@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Duma on Thomrl&#39;s Blog</title>
+    <link>https://thomrl.github.io/blog/</link>
+    <description>Recent content in Duma on Thomrl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2024, Thomrl.</copyright>
+    <lastBuildDate>Fri, 11 Oct 2024 13:52:14 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows - First Steps</title>
+      <link>https://thomrl.github.io/blog/windows-first-steps/</link>
+      <pubDate>Fri, 11 Oct 2024 13:52:14 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/windows-first-steps/</guid>
+      <description>Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.
+Go to Microsoft Store and make sure things in there is updated.
+Run Chris Titus Tech&amp;rsquo;s Windows Utility (Github link). Here I:
+Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed. Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends.</description>
+    </item>
+    
+    <item>
+      <title>Windows Useful Software Tips and Tricks</title>
+      <link>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</link>
+      <pubDate>Fri, 11 Oct 2024 13:13:12 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</guid>
+      <description>Here are things I use to get things done faster in windows. They offer quality of life and makes things less of a hassle. All for free. I will add more over time.
+Ninite Ninite is a great tool. You go to the website https://ninite.com/ pick the apps you want on your computer, and then you go down and press &amp;ldquo;Get Your Ninite&amp;rdquo;. It will download a Ninite installer which will automatically download and install the apps you picked to be installed.</description>
+    </item>
+    
+    <item>
+      <title>Fedora Gaming Setup Guide</title>
+      <link>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</link>
+      <pubDate>Tue, 06 Aug 2024 20:36:57 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</guid>
+      <description>This is a page about »Fedora Gaming Setup Guide« This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 https://fedoraproject.org/workstation/
+Speed up DNF sudo nano /etc/dnf/dnf.conf
+Add this:
+max_parallel_downloads=20 fastestmirror=True I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.</description>
+    </item>
+    
+    <item>
+      <title>Disable Hardware Media Keys on Firefox</title>
+      <link>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</link>
+      <pubDate>Thu, 02 May 2019 19:13:53 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</guid>
+      <description>This is a page about »Disable Hardware Media Keys on Firefox«.
+Guide starts here Write about:config or copy and paste it into the URL field of firefox to access Advanced Preferences.
+Click Accept the Rick and Continue
+Search for media.hardwaremediakeys.enabled in the search preference name field.
+In the second field make sure it says false instead of true.
+That&amp;rsquo;s it, if it doesn&amp;rsquo;t work after these steps, you might need to close firefox and open it up again.</description>
+    </item>
+    
+    <item>
+      <title>Now</title>
+      <link>https://thomrl.github.io/blog/now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/now/</guid>
+      <description>Not much to show here yet</description>
+    </item>
+    
+  </channel>
+</rss>

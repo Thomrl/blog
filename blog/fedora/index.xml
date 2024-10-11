@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fedora on Thomrl&#39;s Blog</title>
+    <link>https://thomrl.github.io/blog/blog/fedora/</link>
+    <description>Recent content in fedora on Thomrl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2024, Thomrl.</copyright>
+    <lastBuildDate>Tue, 06 Aug 2024 20:36:57 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/fedora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fedora Gaming Setup Guide</title>
+      <link>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</link>
+      <pubDate>Tue, 06 Aug 2024 20:36:57 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</guid>
+      <description>This is a page about »Fedora Gaming Setup Guide« This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 https://fedoraproject.org/workstation/
+Speed up DNF sudo nano /etc/dnf/dnf.conf
+Add this:
+max_parallel_downloads=20 fastestmirror=True I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.</description>
+    </item>
+    
+  </channel>
+</rss>

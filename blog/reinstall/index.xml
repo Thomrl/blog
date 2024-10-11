@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reinstall on Thomrl&#39;s Blog</title>
+    <link>https://thomrl.github.io/blog/blog/reinstall/</link>
+    <description>Recent content in reinstall on Thomrl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2024, Thomrl.</copyright>
+    <lastBuildDate>Fri, 11 Oct 2024 13:52:14 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/reinstall/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows - First Steps</title>
+      <link>https://thomrl.github.io/blog/windows-first-steps/</link>
+      <pubDate>Fri, 11 Oct 2024 13:52:14 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/windows-first-steps/</guid>
+      <description>Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.
+Go to Microsoft Store and make sure things in there is updated.
+Run Chris Titus Tech&amp;rsquo;s Windows Utility (Github link). Here I:
+Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed. Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends.</description>
+    </item>
+    
+  </channel>
+</rss>

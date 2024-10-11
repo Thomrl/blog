@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://thomrl.github.io/blog/images/favicon.png" />
+<title>Fedora Gaming Setup Guide | Thomrl&#39;s Blog</title>
+<meta name="title" content="Fedora Gaming Setup Guide" />
+<meta name="description" content="This is a page about »Fedora Gaming Setup Guide« This is how I&rsquo;ve setup my system for gaming, this is all done on Fedora 40 https://fedoraproject.org/workstation/
+Speed up DNF sudo nano /etc/dnf/dnf.conf
+Add this:
+max_parallel_downloads=20 fastestmirror=True I actually didn&rsquo;t add the second line &ldquo;fastestmirror=True&rdquo;, I also haven&rsquo;t felt like I needed it. So &ldquo;max_parallel_downloads&rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great." />
+<meta name="keywords" content="linux,fedora,Gaming," />
+
+
+<meta property="og:title" content="Fedora Gaming Setup Guide" />
+<meta property="og:description" content="This is a page about »Fedora Gaming Setup Guide« This is how I&rsquo;ve setup my system for gaming, this is all done on Fedora 40 https://fedoraproject.org/workstation/
+Speed up DNF sudo nano /etc/dnf/dnf.conf
+Add this:
+max_parallel_downloads=20 fastestmirror=True I actually didn&rsquo;t add the second line &ldquo;fastestmirror=True&rdquo;, I also haven&rsquo;t felt like I needed it. So &ldquo;max_parallel_downloads&rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thomrl.github.io/blog/fedora-gaming-setup-guide/" /><meta property="og:image" content="https://thomrl.github.io/blog/images/share.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-08-06T20:36:57+02:00" />
+<meta property="article:modified_time" content="2024-08-06T20:36:57+02:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://thomrl.github.io/blog/images/share.png"/>
+
+<meta name="twitter:title" content="Fedora Gaming Setup Guide"/>
+<meta name="twitter:description" content="This is a page about »Fedora Gaming Setup Guide« This is how I&rsquo;ve setup my system for gaming, this is all done on Fedora 40 https://fedoraproject.org/workstation/
+Speed up DNF sudo nano /etc/dnf/dnf.conf
+Add this:
+max_parallel_downloads=20 fastestmirror=True I actually didn&rsquo;t add the second line &ldquo;fastestmirror=True&rdquo;, I also haven&rsquo;t felt like I needed it. So &ldquo;max_parallel_downloads&rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great."/>
+
+
+
+<meta itemprop="name" content="Fedora Gaming Setup Guide">
+<meta itemprop="description" content="This is a page about »Fedora Gaming Setup Guide« This is how I&rsquo;ve setup my system for gaming, this is all done on Fedora 40 https://fedoraproject.org/workstation/
+Speed up DNF sudo nano /etc/dnf/dnf.conf
+Add this:
+max_parallel_downloads=20 fastestmirror=True I actually didn&rsquo;t add the second line &ldquo;fastestmirror=True&rdquo;, I also haven&rsquo;t felt like I needed it. So &ldquo;max_parallel_downloads&rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great."><meta itemprop="datePublished" content="2024-08-06T20:36:57+02:00" />
+<meta itemprop="dateModified" content="2024-08-06T20:36:57+02:00" />
+<meta itemprop="wordCount" content="494"><meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png"/>
+<meta itemprop="keywords" content="linux,fedora,Gaming," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/blog" class="title">
+  <h2>Thomrl&#39;s Blog</h2>
+</a>
+<nav><a href="/blog">Home</a>
+
+<a href="/blog/now/">Now</a>
+
+
+<a href="/blog/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Fedora Gaming Setup Guide</h1>
+<p>
+  <i>
+    <time datetime='2024-08-06' pubdate>
+      06 Aug, 2024
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>This is a page about »Fedora Gaming Setup Guide«
+This is how I&rsquo;ve setup my system for gaming, this is all done on Fedora 40 <a href="https://fedoraproject.org/workstation/">https://fedoraproject.org/workstation/</a></p>
+<h1 id="speed-up-dnf">Speed up DNF</h1>
+<p><code>sudo nano /etc/dnf/dnf.conf</code></p>
+<p>Add this:</p>
+<pre tabindex="0"><code>max_parallel_downloads=20
+fastestmirror=True
+</code></pre><p><em>I actually didn&rsquo;t add the second line &ldquo;fastestmirror=True&rdquo;, I also haven&rsquo;t felt like I needed it. So &ldquo;max_parallel_downloads&rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.</em></p>
+<h1 id="snapshots">Snapshots</h1>
+<p><strong>Snapper (snapshot system for Fedora)</strong>
+<code>sudo dnf in snapper dnf-plugin-snapper btrfs-assistant</code></p>
+<p><code>sudo snapper create-config /</code></p>
+<h1 id="nvidia-driver">Nvidia Driver</h1>
+<p>Before doing this, purge akmod-nvidia, before installing the new driver
+<code>dnf remove *nvidia*</code> Not needed just after installing the OS and no driver has been installed.</p>
+<p><strong>These are needed to compile modules and DKMS</strong>
+<code>sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland</code></p>
+<p><a href="https://www.nvidia.com/en-us/drivers/unix/">https://www.nvidia.com/en-us/drivers/unix/</a></p>
+<p>download the driver : <a href="https://www.nvidia.com/content/DriverDownloads/confirmation.php?url=/XFree86/Linux-x86_64/555.52.04/NVIDIA-Linux-x86_64-555.52.04.run&amp;lang=us&amp;type=geforcem">https://www.nvidia.com/content/DriverDownloads/confirmation.php?url=/XFree86/Linux-x86_64/555.52.04/NVIDIA-Linux-x86_64-555.52.04.run&amp;lang=us&amp;type=geforcem</a></p>
+<p><code>cd Downloads</code>
+﻿
+<code>chmod +x NVIDIA-Linux-x86_64-555.52.04.run</code>
+﻿
+do
+<code>sudo passwd</code>
+to change your root passwd</p>
+<p>then do <code>su</code> and enter that new root password
+﻿
+next do <code> ./NVIDIA-Linux-x86_64-555.52.04.run</code></p>
+<p>next run <code>dracut -f</code> Next reboot</p>
+<p>To fix Firefox Crashing install this package (if needed)
+﻿
+<a href="https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara-40/fedora-40-x86_64/07529000-egl-wayland/egl-wayland-1.1.13-4.fc40.x86_64.rpm">https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara-40/fedora-40-x86_64/07529000-egl-wayland/egl-wayland-1.1.13-4.fc40.x86_64.rpm</a>
+﻿
+This will Fix Firefox for you and will be ignored in updates.</p>
+<h1 id="install-new-kernel">Install new kernel</h1>
+<p><code>sudo dnf copr enable bieszczaders/kernel-cachyos</code></p>
+<p><code>sudo dnf install kernel-cachyos kernel-cachyos-devel-matched</code></p>
+<p>Next do <code>sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg</code> to rebuild the grub cfg</p>
+<p>REBOOT</p>
+<h1 id="fix-steam-download-speeds">Fix steam download speeds</h1>
+<p>DONT DO THIS IF STEAM IS DOWNLOADING IN A PROPER RATE</p>
+<p><code>nano ~/.steam/steam/steam_dev.cfg</code></p>
+<p>The command above makes the file</p>
+<pre tabindex="0"><code>@nClientDownloadEnableHTTP2PlatformLinux 0
+@fDownloadRateImprovementToAddAnotherConnection 1.0
+</code></pre><h1 id="xbox-one-controller-firmware-for-linux">Xbox One Controller firmware for linux</h1>
+<p><a href="https://github.com/medusalix/xone">https://github.com/medusalix/xone</a></p>
+<h1 id="recommended-software">Recommended software</h1>
+<p>Wine
+Winetricks
+lutris
+<code> dnf in wine winetricks lutris</code></p>
+<p>ProtonUp-Qt
+protontricks
+Heroic Games Launcher</p>
+<p>lutris - Install world of warcraft
+<a href="https://lutris.net/games/world-of-warcraft/">https://lutris.net/games/world-of-warcraft/</a></p>
+<p>solaar - For headset, keyboard, mouse and the likes.
+htop - system monitor, alternative
+<a href="https://extensions.gnome.org/extension/4442/gsnap/">https://extensions.gnome.org/extension/4442/gsnap/</a> - fancyzones alternative</p>
+<h1 id="disk-formatting">Disk formatting</h1>
+<p><em>Note: This is with dual booting and gaming in mind, if that&rsquo;s not needed it seems btrfs should work perfectly well.</em></p>
+<p>btrfs: works perfectly for a secondary drive, it just can&rsquo;t be reached by windows.
+exfat: doesn&rsquo;t work that well, in my experience.
+NTFS: Looks good with <a href="https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows">https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows</a>  Little slow (but I tested it on a hdd not SSD) so it&rsquo;s probably good with an SSD.</p>
+<p>Unless it&rsquo;s NTFS, I used the disc app to mount the drives automatically on system boot.</p>
+<h1 id="get-the-grub-boot-menu-to-show-if-it-doesnt-show">Get the grub boot menu to show (If it doesn&rsquo;t show)</h1>
+<p>Continuously tap shift while the drive with linux is booting.</p>
+<h1 id="how-to-boot-into-the-command-line">How to boot into the command line</h1>
+<p>Go into the command line on start up through the grub boot menu.
+When you are in the grub menu on boot up,
+Press E on your distro of choice, find the linux boot line thinghy.
+Go to the end of the string and make sure it ends with <code> 3</code>
+<em>So a space between the last letter and then the number 3.</em>
+Then press F10.
+It should now load the command line.</p>
+
+</content>
+<p>
+  
+  <a href="https://thomrl.github.io/blog/blog/linux/">#linux</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/fedora/">#fedora</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/gaming/">#Gaming</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
