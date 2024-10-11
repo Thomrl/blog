@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
-    <lastBuildDate>Fri, 11 Oct 2024 13:52:14 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Oct 2024 16:57:24 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github - How to Push Files to a Repository in Terminal</title>
+      <link>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</link>
+      <pubDate>Fri, 11 Oct 2024 16:57:24 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</guid>
+      <description>I&amp;rsquo;m fairly new to this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
+I&amp;rsquo;ll come back to this.
+Github Access Token First of all you need a token which you can find in your Github settings under
+Settings &amp;gt; Developer settings &amp;gt; Personal access tokens &amp;gt; Tokens (Classic).
+Click Generate new token &amp;gt; (Classic). Give it the name and permissions you want it to have, it can also have everything.</description>
+    </item>
+    
     <item>
       <title>Windows - First Steps</title>
       <link>https://thomrl.github.io/blog/windows-first-steps/</link>
