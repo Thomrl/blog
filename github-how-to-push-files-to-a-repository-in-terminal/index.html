@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://thomrl.github.io/blog/images/favicon.png" />
+<title>Github - How to Push Files to a Repository in Terminal | Thomrl&#39;s Blog</title>
+<meta name="title" content="Github - How to Push Files to a Repository in Terminal" />
+<meta name="description" content="I&rsquo;m fairly new to this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
+I&rsquo;ll come back to this.
+Github Access Token First of all you need a token which you can find in your Github settings under
+Settings &gt; Developer settings &gt; Personal access tokens &gt; Tokens (Classic).
+Click Generate new token &gt; (Classic). Give it the name and permissions you want it to have, it can also have everything." />
+<meta name="keywords" content="Github,Git,Terminal," />
+
+
+<meta property="og:title" content="Github - How to Push Files to a Repository in Terminal" />
+<meta property="og:description" content="I&rsquo;m fairly new to this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
+I&rsquo;ll come back to this.
+Github Access Token First of all you need a token which you can find in your Github settings under
+Settings &gt; Developer settings &gt; Personal access tokens &gt; Tokens (Classic).
+Click Generate new token &gt; (Classic). Give it the name and permissions you want it to have, it can also have everything." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/" /><meta property="og:image" content="https://thomrl.github.io/blog/images/share.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-10-11T16:57:24+02:00" />
+<meta property="article:modified_time" content="2024-10-11T16:57:24+02:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://thomrl.github.io/blog/images/share.png"/>
+
+<meta name="twitter:title" content="Github - How to Push Files to a Repository in Terminal"/>
+<meta name="twitter:description" content="I&rsquo;m fairly new to this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
+I&rsquo;ll come back to this.
+Github Access Token First of all you need a token which you can find in your Github settings under
+Settings &gt; Developer settings &gt; Personal access tokens &gt; Tokens (Classic).
+Click Generate new token &gt; (Classic). Give it the name and permissions you want it to have, it can also have everything."/>
+
+
+
+<meta itemprop="name" content="Github - How to Push Files to a Repository in Terminal">
+<meta itemprop="description" content="I&rsquo;m fairly new to this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
+I&rsquo;ll come back to this.
+Github Access Token First of all you need a token which you can find in your Github settings under
+Settings &gt; Developer settings &gt; Personal access tokens &gt; Tokens (Classic).
+Click Generate new token &gt; (Classic). Give it the name and permissions you want it to have, it can also have everything."><meta itemprop="datePublished" content="2024-10-11T16:57:24+02:00" />
+<meta itemprop="dateModified" content="2024-10-11T16:57:24+02:00" />
+<meta itemprop="wordCount" content="243"><meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png"/>
+<meta itemprop="keywords" content="Github,Git,Terminal," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/blog" class="title">
+  <h2>Thomrl&#39;s Blog</h2>
+</a>
+<nav><a href="/blog">Home</a>
+
+<a href="/blog/now/">Now</a>
+
+
+<a href="/blog/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Github - How to Push Files to a Repository in Terminal</h1>
+<p>
+  <i>
+    <time datetime='2024-10-11' pubdate>
+      11 Oct, 2024
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>I&rsquo;m fairly new to this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.<br>
+I&rsquo;ll come back to this.</p>
+<h3 id="github-access-token">Github Access Token</h3>
+<p>First of all you need a token which you can find in your Github settings under<br>
+<code>Settings &gt; Developer settings &gt; Personal access tokens &gt; Tokens (Classic)</code>.<br>
+Click <code>Generate new token &gt; (Classic)</code>.
+Give it the name and permissions you want it to have, it can also have everything.<br>
+It is recommended to have the token expire eventually for security reasons.</p>
+<h3 id="setup-your-author-identity">Setup your author identity</h3>
+<p><code>git config --global user.name &quot;Your Name&quot; </code><br>
+<code>git config --global user.email &quot;youremail@domain.com&quot;</code><br>
+Self explanatory, but it doesn&rsquo;t return anything which can make you uncertain if you did it correctly. You probably did.</p>
+<h3 id="trial-and-error">Trial and error</h3>
+<p>I made a commit to begin with as you do with <code>git commit -m &quot;test&quot; .</code></p>
+<p>I saw a <a href="https://www.youtube.com/watch?v=AdzKzlp66sQ">YouTube video</a> and got this command to use:<br>
+<code>git remote add origin https://[Access Token]@github.com/[Username]/[repository].git</code></p>
+<p>Then used these commands<br>
+<code>git branch -M main</code><br>
+<code>git push -u origin main</code></p>
+<p>The following command got me further after some error(s).<br>
+<code>git push --set-upstream origin master</code></p>
+<p><code>git push -u origin main</code> I wasn&rsquo;t able to use this.</p>
+<p><code>git fetch</code> I tried because I couldn&rsquo;t push my commit.</p>
+<p><code>git push -u -f origin main</code> -f was needed for me because I kept getting rejections, and it didn&rsquo;t help to pull, fetch or anything.</p>
+<h3 id="useful-commands">Useful commands</h3>
+<p><code>git status</code></p>
+
+</content>
+<p>
+  
+  <a href="https://thomrl.github.io/blog/blog/github/">#Github</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/git/">#Git</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/terminal/">#Terminal</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
