@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>firefox on Thomrl&#39;s Blog</title>
+    <title>Firefox on Thomrl&#39;s Blog</title>
     <link>https://thomrl.github.io/blog/blog/firefox/</link>
-    <description>Recent content in firefox on Thomrl&#39;s Blog</description>
+    <description>Recent content in Firefox on Thomrl&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
@@ -16,7 +16,7 @@
       <guid>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</guid>
       <description>This is a page about »Disable Hardware Media Keys on Firefox«.
 Guide starts here Write about:config or copy and paste it into the URL field of firefox to access Advanced Preferences.
-Click Accept the Rick and Continue
+Click Accept the Risk and Continue
 Search for media.hardwaremediakeys.enabled in the search preference name field.
 In the second field make sure it says false instead of true.
 That&amp;rsquo;s it, if it doesn&amp;rsquo;t work after these steps, you might need to close firefox and open it up again.</description>

@@ -12,7 +12,7 @@
 Speed up DNF sudo nano /etc/dnf/dnf.conf
 Add this:
 max_parallel_downloads=20 fastestmirror=True I actually didn&rsquo;t add the second line &ldquo;fastestmirror=True&rdquo;, I also haven&rsquo;t felt like I needed it. So &ldquo;max_parallel_downloads&rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great." />
-<meta name="keywords" content="linux,fedora,gaming," />
+<meta name="keywords" content="Linux,Fedora,Gaming,Reinstall," />
 
 
 <meta property="og:title" content="Fedora Gaming Setup Guide" />
@@ -44,8 +44,8 @@ Speed up DNF sudo nano /etc/dnf/dnf.conf
 Add this:
 max_parallel_downloads=20 fastestmirror=True I actually didn&rsquo;t add the second line &ldquo;fastestmirror=True&rdquo;, I also haven&rsquo;t felt like I needed it. So &ldquo;max_parallel_downloads&rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great."><meta itemprop="datePublished" content="2024-08-06T20:36:57+02:00" />
 <meta itemprop="dateModified" content="2024-08-06T20:36:57+02:00" />
-<meta itemprop="wordCount" content="494"><meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png"/>
-<meta itemprop="keywords" content="linux,fedora,gaming," />
+<meta itemprop="wordCount" content="500"><meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png"/>
+<meta itemprop="keywords" content="Linux,Fedora,Gaming,Reinstall," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -266,24 +266,20 @@ fastestmirror=True
 <code>dnf remove *nvidia*</code> Not needed just after installing the OS and no driver has been installed.</p>
 <p><strong>These are needed to compile modules and DKMS</strong>
 <code>sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland</code></p>
-<p><a href="https://www.nvidia.com/en-us/drivers/unix/">https://www.nvidia.com/en-us/drivers/unix/</a></p>
-<p>download the driver : <a href="https://www.nvidia.com/content/DriverDownloads/confirmation.php?url=/XFree86/Linux-x86_64/555.52.04/NVIDIA-Linux-x86_64-555.52.04.run&amp;lang=us&amp;type=geforcem">https://www.nvidia.com/content/DriverDownloads/confirmation.php?url=/XFree86/Linux-x86_64/555.52.04/NVIDIA-Linux-x86_64-555.52.04.run&amp;lang=us&amp;type=geforcem</a></p>
-<p><code>cd Downloads</code>
-﻿
-<code>chmod +x NVIDIA-Linux-x86_64-555.52.04.run</code>
-﻿
-do
+<p><strong>Download the driver:</strong><br>
+The one I use by time of writing: <a href="https://www.nvidia.com/content/DriverDownloads/confirmation.php?url=/XFree86/Linux-x86_64/555.52.04/NVIDIA-Linux-x86_64-555.52.04.run&amp;lang=us&amp;type=geforcem">https://www.nvidia.com/content/DriverDownloads/confirmation.php?url=/XFree86/Linux-x86_64/555.52.04/NVIDIA-Linux-x86_64-555.52.04.run&amp;lang=us&amp;type=geforcem</a></p>
+<p>Download the latest here:<br>
+<a href="https://www.nvidia.com/en-us/drivers/unix/">https://www.nvidia.com/en-us/drivers/unix/</a></p>
+<p><code>cd Downloads</code></p>
+<p><code>chmod +x NVIDIA-Linux-x86_64-555.52.04.run</code> Filename will be different if you download the latest driver.</p>
+<p>do
 <code>sudo passwd</code>
 to change your root passwd</p>
-<p>then do <code>su</code> and enter that new root password
-﻿
-next do <code> ./NVIDIA-Linux-x86_64-555.52.04.run</code></p>
+<p>then do <code>su</code> and enter that new root password</p>
+<p>next do <code> ./NVIDIA-Linux-x86_64-555.52.04.run</code></p>
 <p>next run <code>dracut -f</code> Next reboot</p>
-<p>To fix Firefox Crashing install this package (if needed)
-﻿
-<a href="https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara-40/fedora-40-x86_64/07529000-egl-wayland/egl-wayland-1.1.13-4.fc40.x86_64.rpm">https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara-40/fedora-40-x86_64/07529000-egl-wayland/egl-wayland-1.1.13-4.fc40.x86_64.rpm</a>
-﻿
-This will Fix Firefox for you and will be ignored in updates.</p>
+<p><strong>If Firefox is Crashing after installing the driver, install this package</strong>
+<a href="https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara-40/fedora-40-x86_64/07529000-egl-wayland/egl-wayland-1.1.13-4.fc40.x86_64.rpm">https://download.copr.fedorainfracloud.org/results/gloriouseggroll/nobara-40/fedora-40-x86_64/07529000-egl-wayland/egl-wayland-1.1.13-4.fc40.x86_64.rpm</a></p>
 <h1 id="install-new-kernel">Install new kernel</h1>
 <p><code>sudo dnf copr enable bieszczaders/kernel-cachyos</code></p>
 <p><code>sudo dnf install kernel-cachyos kernel-cachyos-devel-matched</code></p>
@@ -302,8 +298,8 @@ This will Fix Firefox for you and will be ignored in updates.</p>
 Winetricks
 lutris
 <code> dnf in wine winetricks lutris</code></p>
-<p>ProtonUp-Qt
-protontricks
+<p>ProtonUp-Qt<br>
+protontricks<br>
 Heroic Games Launcher</p>
 <p>lutris - Install world of warcraft
 <a href="https://lutris.net/games/world-of-warcraft/">https://lutris.net/games/world-of-warcraft/</a></p>
@@ -330,11 +326,13 @@ It should now load the command line.</p>
 </content>
 <p>
   
-  <a href="https://thomrl.github.io/blog/blog/linux/">#linux</a>
+  <a href="https://thomrl.github.io/blog/blog/linux/">#Linux</a>
   
-  <a href="https://thomrl.github.io/blog/blog/fedora/">#fedora</a>
+  <a href="https://thomrl.github.io/blog/blog/fedora/">#Fedora</a>
   
-  <a href="https://thomrl.github.io/blog/blog/gaming/">#gaming</a>
+  <a href="https://thomrl.github.io/blog/blog/gaming/">#Gaming</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/reinstall/">#Reinstall</a>
   
 </p>
 

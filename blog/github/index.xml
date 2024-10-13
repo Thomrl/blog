@@ -14,7 +14,7 @@
       <pubDate>Fri, 11 Oct 2024 16:57:24 +0200</pubDate>
       
       <guid>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</guid>
-      <description>I&amp;rsquo;m fairly new to this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
+      <description>I&amp;rsquo;m rusty with this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
 I&amp;rsquo;ll come back to this.
 When it has been setup git add . To add all files in the directory to the next commit.
 git commit -m &amp;quot;[title of commit]&amp;quot; . Create a commit.

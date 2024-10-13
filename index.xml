@@ -14,7 +14,7 @@
       <pubDate>Fri, 11 Oct 2024 16:57:24 +0200</pubDate>
       
       <guid>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</guid>
-      <description>I&amp;rsquo;m fairly new to this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
+      <description>I&amp;rsquo;m rusty with this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
 I&amp;rsquo;ll come back to this.
 When it has been setup git add . To add all files in the directory to the next commit.
 git commit -m &amp;quot;[title of commit]&amp;quot; . Create a commit.
@@ -29,7 +29,8 @@ git push -u origin main Push/Upload the commits in the queue.</description>
       <guid>https://thomrl.github.io/blog/windows-first-steps/</guid>
       <description>Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.
 Go to Microsoft Store and make sure things in there is updated.
-Run Chris Titus Tech&amp;rsquo;s Windows Utility (Github link). Here I:
+Run Chris Titus Tech&amp;rsquo;s Windows Utility (Github link).
+Here I will:
 Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed. Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends.</description>
     </item>
     
@@ -40,6 +41,10 @@ Set the computer to delay feature updates for Windows. Security updates will sti
       
       <guid>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</guid>
       <description>Here are things I use to get things done faster in windows. They offer quality of life and makes things less of a hassle. All for free. I will add more over time.
+Go to section about:
+Ninite
+Winget
+ShareX
 Ninite Ninite is a great tool. You go to the website https://ninite.com/ pick the apps you want on your computer, and then you go down and press &amp;ldquo;Get Your Ninite&amp;rdquo;. It will download a Ninite installer which will automatically download and install the apps you picked to be installed.</description>
     </item>
     
@@ -63,7 +68,7 @@ max_parallel_downloads=20 fastestmirror=True I actually didn&amp;rsquo;t add the
       <guid>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</guid>
       <description>This is a page about »Disable Hardware Media Keys on Firefox«.
 Guide starts here Write about:config or copy and paste it into the URL field of firefox to access Advanced Preferences.
-Click Accept the Rick and Continue
+Click Accept the Risk and Continue
 Search for media.hardwaremediakeys.enabled in the search preference name field.
 In the second field make sure it says false instead of true.
 That&amp;rsquo;s it, if it doesn&amp;rsquo;t work after these steps, you might need to close firefox and open it up again.</description>
