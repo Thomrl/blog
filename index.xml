@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
-    <lastBuildDate>Fri, 11 Oct 2024 16:57:24 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Apr 2025 02:52:34 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Stay Safe Browsing the Web</title>
+      <link>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</link>
+      <pubDate>Mon, 21 Apr 2025 02:52:34 +0200</pubDate>
+      
+      <guid>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</guid>
+      <description>This is a page about »How to stay safe while browsing the Web«.
+Starting out with this post lacking a few things. I will update it later where I also include links to the things I&amp;rsquo;m talking about.
+Install an adblocker on your browser (This can be tricky if you use google chrome, and I highly recommend using another browser.) Why install an adblocker? I have experienced so many times where I&amp;rsquo;ve told a friend or family member to download a program from a website I&amp;rsquo;ve specified.</description>
+    </item>
+    
     <item>
       <title>Github - How to Push Files to a Repository in Terminal</title>
       <link>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</link>
