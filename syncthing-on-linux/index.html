@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://thomrl.github.io/blog/images/favicon.png" />
+<title>Syncthing on Linux | Thomrl&#39;s Blog</title>
+<meta name="title" content="Syncthing on Linux" />
+<meta name="description" content="This is a page about »Syncthing on Linux«.
+Debian/RaspberryPi (Years ago, probably outdated)
+Follow the documentation
+Then nano ~/.config/syncthing/config.xml
+Find the following
+&lt;gui enabled=&#34;true&#34; tls=&#34;false&#34; debugging=&#34;false&#34;&gt;
+&lt;address&gt;127.0.0.1:8384&lt;/address&gt;
+&lt;apikey&gt;&lt;/apikey&gt;
+&lt;theme&gt;default&lt;/theme&gt;
+&lt;/gui&gt;
+And replace the 127.0.0.1:8384 with 0.0.0.0:8384.
+Now any machine on the local network can access the program.
+Save and Close
+
+Fedora
+sudo dnf in syncthing
+
+Make it start on system boot.
+To make it a service that can start up on it&rsquo;s own when turning on the machine
+systemctl enable syncthing@[username].service
+systemctl start syncthing@[username].service to start it right away
+Make sure to replace [username] with your username." />
+<meta name="keywords" content="fedora,linux,software,terminal," />
+
+
+<meta property="og:url" content="https://thomrl.github.io/blog/syncthing-on-linux/">
+  <meta property="og:site_name" content="Thomrl&#39;s Blog">
+  <meta property="og:title" content="Syncthing on Linux">
+  <meta property="og:description" content="This is a page about »Syncthing on Linux«.
+Debian/RaspberryPi (Years ago, probably outdated) Follow the documentation
+Then nano ~/.config/syncthing/config.xml
+Find the following
+&lt;gui enabled=&#34;true&#34; tls=&#34;false&#34; debugging=&#34;false&#34;&gt; &lt;address&gt;127.0.0.1:8384&lt;/address&gt; &lt;apikey&gt;&lt;/apikey&gt; &lt;theme&gt;default&lt;/theme&gt; &lt;/gui&gt; And replace the 127.0.0.1:8384 with 0.0.0.0:8384. Now any machine on the local network can access the program.
+Save and Close
+Fedora sudo dnf in syncthing
+Make it start on system boot. To make it a service that can start up on it’s own when turning on the machine
+systemctl enable syncthing@[username].service
+systemctl start syncthing@[username].service to start it right away
+Make sure to replace [username] with your username.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-04-29T02:38:35+02:00">
+    <meta property="article:modified_time" content="2025-04-29T02:38:35+02:00">
+    <meta property="article:tag" content="Fedora">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Software">
+    <meta property="article:tag" content="Terminal">
+    <meta property="og:image" content="https://thomrl.github.io/blog/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://thomrl.github.io/blog/images/share.png">
+  <meta name="twitter:title" content="Syncthing on Linux">
+  <meta name="twitter:description" content="This is a page about »Syncthing on Linux«.
+Debian/RaspberryPi (Years ago, probably outdated) Follow the documentation
+Then nano ~/.config/syncthing/config.xml
+Find the following
+&lt;gui enabled=&#34;true&#34; tls=&#34;false&#34; debugging=&#34;false&#34;&gt; &lt;address&gt;127.0.0.1:8384&lt;/address&gt; &lt;apikey&gt;&lt;/apikey&gt; &lt;theme&gt;default&lt;/theme&gt; &lt;/gui&gt; And replace the 127.0.0.1:8384 with 0.0.0.0:8384. Now any machine on the local network can access the program.
+Save and Close
+Fedora sudo dnf in syncthing
+Make it start on system boot. To make it a service that can start up on it’s own when turning on the machine
+systemctl enable syncthing@[username].service
+systemctl start syncthing@[username].service to start it right away
+Make sure to replace [username] with your username.">
+
+
+
+
+  <meta itemprop="name" content="Syncthing on Linux">
+  <meta itemprop="description" content="This is a page about »Syncthing on Linux«.
+Debian/RaspberryPi (Years ago, probably outdated) Follow the documentation
+Then nano ~/.config/syncthing/config.xml
+Find the following
+&lt;gui enabled=&#34;true&#34; tls=&#34;false&#34; debugging=&#34;false&#34;&gt; &lt;address&gt;127.0.0.1:8384&lt;/address&gt; &lt;apikey&gt;&lt;/apikey&gt; &lt;theme&gt;default&lt;/theme&gt; &lt;/gui&gt; And replace the 127.0.0.1:8384 with 0.0.0.0:8384. Now any machine on the local network can access the program.
+Save and Close
+Fedora sudo dnf in syncthing
+Make it start on system boot. To make it a service that can start up on it’s own when turning on the machine
+systemctl enable syncthing@[username].service
+systemctl start syncthing@[username].service to start it right away
+Make sure to replace [username] with your username.">
+  <meta itemprop="datePublished" content="2025-04-29T02:38:35+02:00">
+  <meta itemprop="dateModified" content="2025-04-29T02:38:35+02:00">
+  <meta itemprop="wordCount" content="125">
+  <meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png">
+  <meta itemprop="keywords" content="Fedora,Linux,Software,Terminal">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/blog/" class="title">
+  <h2>Thomrl&#39;s Blog</h2>
+</a>
+<nav><a href="/blog/">Home</a>
+
+<a href="/blog/now/">Now</a>
+
+
+<a href="/blog/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Syncthing on Linux</h1>
+<p>
+  <i>
+    <time datetime='2025-04-29' pubdate>
+      29 Apr, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>This is a page about »Syncthing on Linux«.</p>
+<h3 id="debianraspberrypi-years-ago-probably-outdated">Debian/RaspberryPi (Years ago, probably outdated)</h3>
+<p>Follow the documentation</p>
+<p>Then <code>nano ~/.config/syncthing/config.xml</code></p>
+<p>Find the following</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&lt;gui enabled<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> tls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> debugging<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;address&gt;127.0.0.1:8384&lt;/address&gt;
+</span></span><span style="display:flex;"><span>&lt;apikey&gt;&lt;/apikey&gt;
+</span></span><span style="display:flex;"><span>&lt;theme&gt;default&lt;/theme&gt;
+</span></span><span style="display:flex;"><span>&lt;/gui&gt;
+</span></span></code></pre></div><p>And replace the 127.0.0.1:8384 with 0.0.0.0:8384.
+Now any machine on the local network can access the program.<br>
+Save and Close</p>
+<hr>
+<h3 id="fedora">Fedora</h3>
+<p><code>sudo dnf in syncthing</code></p>
+<hr>
+<h3 id="make-it-start-on-system-boot">Make it start on system boot.</h3>
+<p>To make it a service that can start up on it&rsquo;s own when turning on the machine<br>
+<code>systemctl enable syncthing@[username].service</code><br>
+<code>systemctl start syncthing@[username].service</code> to start it right away<br>
+Make sure to replace [username] with your username.</p>
+<hr>
+<p><strong>Fix:</strong><br>
+If the password for entering the GUI is lost you can delete it in the config file, restart syncthing and problem is solved.</p>
+<hr>
+<h5 id="sources">sources</h5>
+<p><a href="https://jakemakes.eu/syncthing-on-raspberry-pi-2-make-your-own-cloud-storage/">https://jakemakes.eu/syncthing-on-raspberry-pi-2-make-your-own-cloud-storage/</a>
+<a href="https://forum.syncthing.net/t/password-recovery/901">https://forum.syncthing.net/t/password-recovery/901</a></p>
+<hr>
+<h5 id="tags">Tags</h5>
+
+</content>
+<p>
+  
+  <a href="https://thomrl.github.io/blog/blog/fedora/">#Fedora</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/linux/">#Linux</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/software/">#Software</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/terminal/">#Terminal</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
