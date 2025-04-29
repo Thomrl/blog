@@ -4,34 +4,31 @@
     <title>Reinstall on Thomrl&#39;s Blog</title>
     <link>https://thomrl.github.io/blog/blog/reinstall/</link>
     <description>Recent content in Reinstall on Thomrl&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
-    <lastBuildDate>Fri, 11 Oct 2024 13:52:14 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/reinstall/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 01:12:26 +0200</lastBuildDate>
+    <atom:link href="https://thomrl.github.io/blog/blog/reinstall/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fedora 42 Gaming Setup</title>
+      <link>https://thomrl.github.io/blog/fedora-42-gaming-setup/</link>
+      <pubDate>Tue, 29 Apr 2025 01:12:26 +0200</pubDate>
+      <guid>https://thomrl.github.io/blog/fedora-42-gaming-setup/</guid>
+      <description>&lt;p&gt;This is a page about »Fedora 42 Gaming Setup«.&lt;/p&gt;&#xA;&lt;p&gt;Here is how I&amp;rsquo;ve setup my machine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Snapper (snapshot system for Fedora)&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf in snapper dnf-plugin-snapper btrfs-assistant&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo snapper create-config /&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;nvidia-driver&#34;&gt;Nvidia Driver&lt;/h1&gt;&#xA;&lt;p&gt;Start with purging if there&amp;rsquo;s something needs to go.&lt;br&gt;&#xA;&lt;code&gt;sudo dnf remove xorg-x11-drv-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove akmod-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove nvidia-vaapi-driver&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;These are needed to compile modules and DKMS&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Windows - First Steps</title>
       <link>https://thomrl.github.io/blog/windows-first-steps/</link>
       <pubDate>Fri, 11 Oct 2024 13:52:14 +0200</pubDate>
-      
       <guid>https://thomrl.github.io/blog/windows-first-steps/</guid>
-      <description>Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.
-Go to Microsoft Store and make sure things in there is updated.
-Run Chris Titus Tech&amp;rsquo;s Windows Utility (Github link).
-Here I will:
-Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed. Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends.</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Go to Microsoft Store and make sure things in there is updated.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run Chris Titus Tech&amp;rsquo;s Windows Utility (&lt;a href=&#34;https://github.com/ChrisTitusTech/winutil/&#34;&gt;Github link&lt;/a&gt;).&lt;br&gt;&#xA;Here I will:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed.&lt;/li&gt;&#xA;&lt;li&gt;Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends. (Config tab).&lt;/li&gt;&#xA;&lt;li&gt;Disable Search Box Web Suggestions.&lt;/li&gt;&#xA;&lt;li&gt;Go to the Tweaks tab, press Standard, and go through what it does.&#xA;In this tool you can point with your mouse on differing things and it will give you more information about what that thing does.&lt;/li&gt;&#xA;&lt;li&gt;Change DNS in a lot of cases, but not on my own PCs as I&amp;rsquo;m running Pi.Hole on my network.&lt;/li&gt;&#xA;&lt;li&gt;Run OO Shutup 10, to prevent Windows from spying.&lt;/li&gt;&#xA;&lt;li&gt;Create Winutil shortcut and Run tweaks.&#xA;Winutil can also be used to install software.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install a browser through the command prompt (CMD) using Winget.&#xA;To install firefox &lt;code&gt;winget install Mozilla.Firefox&lt;/code&gt;&#xA;To install brave &lt;code&gt;winget install Brave.Brave&lt;/code&gt;&#xA;Then I will also go to &lt;code&gt;Settings &amp;gt; Apps &amp;gt; Default Apps&lt;/code&gt; in Windows and pick the installed browser as default browser.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fedora Gaming Setup Guide</title>
       <link>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</link>
       <pubDate>Tue, 06 Aug 2024 20:36:57 +0200</pubDate>
-      
       <guid>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</guid>
-      <description>This is a page about »Fedora Gaming Setup Guide« This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 https://fedoraproject.org/workstation/
-Speed up DNF sudo nano /etc/dnf/dnf.conf
-Add this:
-max_parallel_downloads=20 fastestmirror=True I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.</description>
+      <description>&lt;p&gt;This is a page about »Fedora Gaming Setup Guide«&#xA;This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 &lt;a href=&#34;https://fedoraproject.org/workstation/&#34;&gt;https://fedoraproject.org/workstation/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;speed-up-dnf&#34;&gt;Speed up DNF&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo nano /etc/dnf/dnf.conf&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Add this:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;max_parallel_downloads=20&#xA;fastestmirror=True&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

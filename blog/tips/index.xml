@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tips on Thomrl&#39;s Blog</title>
+    <title>Tips on Thomrl&#39;s Blog</title>
     <link>https://thomrl.github.io/blog/blog/tips/</link>
-    <description>Recent content in tips on Thomrl&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Tips on Thomrl&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
-    <lastBuildDate>Mon, 21 Apr 2025 02:52:34 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 01:12:26 +0200</lastBuildDate>
+    <atom:link href="https://thomrl.github.io/blog/blog/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fedora 42 Gaming Setup</title>
+      <link>https://thomrl.github.io/blog/fedora-42-gaming-setup/</link>
+      <pubDate>Tue, 29 Apr 2025 01:12:26 +0200</pubDate>
+      <guid>https://thomrl.github.io/blog/fedora-42-gaming-setup/</guid>
+      <description>&lt;p&gt;This is a page about »Fedora 42 Gaming Setup«.&lt;/p&gt;&#xA;&lt;p&gt;Here is how I&amp;rsquo;ve setup my machine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Snapper (snapshot system for Fedora)&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf in snapper dnf-plugin-snapper btrfs-assistant&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo snapper create-config /&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;nvidia-driver&#34;&gt;Nvidia Driver&lt;/h1&gt;&#xA;&lt;p&gt;Start with purging if there&amp;rsquo;s something needs to go.&lt;br&gt;&#xA;&lt;code&gt;sudo dnf remove xorg-x11-drv-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove akmod-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove nvidia-vaapi-driver&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;These are needed to compile modules and DKMS&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to Stay Safe Browsing the Web</title>
       <link>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</link>
       <pubDate>Mon, 21 Apr 2025 02:52:34 +0200</pubDate>
-      
       <guid>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</guid>
-      <description>This is a page about »How to stay safe while browsing the Web«.
-Starting out with this post lacking a few things. I will update it later where I also include links to the things I&amp;rsquo;m talking about.
-Install an adblocker on your browser (This can be tricky if you use google chrome, and I highly recommend using another browser.) Why install an adblocker? I have experienced so many times where I&amp;rsquo;ve told a friend or family member to download a program from a website I&amp;rsquo;ve specified.</description>
+      <description>&lt;p&gt;This is a page about »How to stay safe while browsing the Web«.&lt;/p&gt;&#xA;&lt;p&gt;Starting out with this post lacking a few things. I will update it later where I also include links to the things I&amp;rsquo;m talking about.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Install an adblocker on your browser (This can be tricky if you use google chrome, and I highly recommend using another browser.)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;why-install-an-adblocker&#34;&gt;Why install an adblocker?&lt;/h3&gt;&#xA;&lt;p&gt;I have experienced so many times where I&amp;rsquo;ve told a friend or family member to download a program from a website I&amp;rsquo;ve specified. They click download on the website I&amp;rsquo;ve specified, and to my surprise they didn&amp;rsquo;t download the correct thing. The reason being, I use an adblocker but they didn&amp;rsquo;t and the ads they see say &amp;ldquo;download&amp;rdquo;. This clearly shows that ads are a huge security nightmare. There&amp;rsquo;s also so many other annoyances ads include, sponsored search results (ads) can be leading you to a website containing malware, they can play unwanted sound and the list goes on. So really, I very much recommend you to Install an adblocker.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Windows - First Steps</title>
       <link>https://thomrl.github.io/blog/windows-first-steps/</link>
       <pubDate>Fri, 11 Oct 2024 13:52:14 +0200</pubDate>
-      
       <guid>https://thomrl.github.io/blog/windows-first-steps/</guid>
-      <description>Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.
-Go to Microsoft Store and make sure things in there is updated.
-Run Chris Titus Tech&amp;rsquo;s Windows Utility (Github link).
-Here I will:
-Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed. Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends.</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Go to Microsoft Store and make sure things in there is updated.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run Chris Titus Tech&amp;rsquo;s Windows Utility (&lt;a href=&#34;https://github.com/ChrisTitusTech/winutil/&#34;&gt;Github link&lt;/a&gt;).&lt;br&gt;&#xA;Here I will:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed.&lt;/li&gt;&#xA;&lt;li&gt;Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends. (Config tab).&lt;/li&gt;&#xA;&lt;li&gt;Disable Search Box Web Suggestions.&lt;/li&gt;&#xA;&lt;li&gt;Go to the Tweaks tab, press Standard, and go through what it does.&#xA;In this tool you can point with your mouse on differing things and it will give you more information about what that thing does.&lt;/li&gt;&#xA;&lt;li&gt;Change DNS in a lot of cases, but not on my own PCs as I&amp;rsquo;m running Pi.Hole on my network.&lt;/li&gt;&#xA;&lt;li&gt;Run OO Shutup 10, to prevent Windows from spying.&lt;/li&gt;&#xA;&lt;li&gt;Create Winutil shortcut and Run tweaks.&#xA;Winutil can also be used to install software.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install a browser through the command prompt (CMD) using Winget.&#xA;To install firefox &lt;code&gt;winget install Mozilla.Firefox&lt;/code&gt;&#xA;To install brave &lt;code&gt;winget install Brave.Brave&lt;/code&gt;&#xA;Then I will also go to &lt;code&gt;Settings &amp;gt; Apps &amp;gt; Default Apps&lt;/code&gt; in Windows and pick the installed browser as default browser.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Windows Useful Software Tips and Tricks</title>
       <link>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</link>
       <pubDate>Fri, 11 Oct 2024 13:13:12 +0200</pubDate>
-      
       <guid>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</guid>
-      <description>Here are things I use to get things done faster in windows. They offer quality of life and makes things less of a hassle. All for free. I will add more over time.
-Go to section about:
-Ninite
-Winget
-ShareX
-Ninite Ninite is a great tool. You go to the website https://ninite.com/ pick the apps you want on your computer, and then you go down and press &amp;ldquo;Get Your Ninite&amp;rdquo;. It will download a Ninite installer which will automatically download and install the apps you picked to be installed.</description>
+      <description>&lt;p&gt;Here are things I use to get things done faster in windows. They offer quality of life and makes things less of a hassle. All for free.&#xA;I will add more over time.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Go to section about:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#ninite&#34;&gt;Ninite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#winget&#34;&gt;Winget&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#sharex&#34;&gt;ShareX&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ninite&#34;&gt;Ninite&lt;/h2&gt;&#xA;&lt;p&gt;Ninite is a great tool. You go to the website &lt;a href=&#34;https://ninite.com/&#34;&gt;https://ninite.com/&lt;/a&gt; pick the apps you want on your computer, and then you go down and press &amp;ldquo;Get Your Ninite&amp;rdquo;. It will download a Ninite installer which will automatically download and install the apps you picked to be installed. It has done a lot of wonders.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

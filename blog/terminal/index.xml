@@ -4,22 +4,24 @@
     <title>Terminal on Thomrl&#39;s Blog</title>
     <link>https://thomrl.github.io/blog/blog/terminal/</link>
     <description>Recent content in Terminal on Thomrl&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
-    <lastBuildDate>Fri, 11 Oct 2024 16:57:24 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 01:12:26 +0200</lastBuildDate>
+    <atom:link href="https://thomrl.github.io/blog/blog/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fedora 42 Gaming Setup</title>
+      <link>https://thomrl.github.io/blog/fedora-42-gaming-setup/</link>
+      <pubDate>Tue, 29 Apr 2025 01:12:26 +0200</pubDate>
+      <guid>https://thomrl.github.io/blog/fedora-42-gaming-setup/</guid>
+      <description>&lt;p&gt;This is a page about »Fedora 42 Gaming Setup«.&lt;/p&gt;&#xA;&lt;p&gt;Here is how I&amp;rsquo;ve setup my machine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Snapper (snapshot system for Fedora)&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf in snapper dnf-plugin-snapper btrfs-assistant&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo snapper create-config /&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;nvidia-driver&#34;&gt;Nvidia Driver&lt;/h1&gt;&#xA;&lt;p&gt;Start with purging if there&amp;rsquo;s something needs to go.&lt;br&gt;&#xA;&lt;code&gt;sudo dnf remove xorg-x11-drv-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove akmod-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove nvidia-vaapi-driver&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;These are needed to compile modules and DKMS&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Github - How to Push Files to a Repository in Terminal</title>
       <link>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</link>
       <pubDate>Fri, 11 Oct 2024 16:57:24 +0200</pubDate>
-      
       <guid>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</guid>
-      <description>I&amp;rsquo;m rusty with this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.
-I&amp;rsquo;ll come back to this.
-When it has been setup git add . To add all files in the directory to the next commit.
-git commit -m &amp;quot;[title of commit]&amp;quot; . Create a commit.
-git push -u origin main Push/Upload the commits in the queue.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m rusty with this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.&lt;br&gt;&#xA;I&amp;rsquo;ll come back to this.&lt;/p&gt;&#xA;&lt;h1 id=&#34;when-it-has-been-setup&#34;&gt;When it has been setup&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt; To add all files in the directory to the next commit.&lt;br&gt;&#xA;&lt;code&gt;git commit -m &amp;quot;[title of commit]&amp;quot; .&lt;/code&gt; Create a commit.&lt;br&gt;&#xA;&lt;code&gt;git push -u origin main&lt;/code&gt; Push/Upload the commits in the queue.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

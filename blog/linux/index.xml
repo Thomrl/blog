@@ -4,21 +4,24 @@
     <title>Linux on Thomrl&#39;s Blog</title>
     <link>https://thomrl.github.io/blog/blog/linux/</link>
     <description>Recent content in Linux on Thomrl&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
-    <lastBuildDate>Tue, 06 Aug 2024 20:36:57 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 01:12:26 +0200</lastBuildDate>
+    <atom:link href="https://thomrl.github.io/blog/blog/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fedora 42 Gaming Setup</title>
+      <link>https://thomrl.github.io/blog/fedora-42-gaming-setup/</link>
+      <pubDate>Tue, 29 Apr 2025 01:12:26 +0200</pubDate>
+      <guid>https://thomrl.github.io/blog/fedora-42-gaming-setup/</guid>
+      <description>&lt;p&gt;This is a page about »Fedora 42 Gaming Setup«.&lt;/p&gt;&#xA;&lt;p&gt;Here is how I&amp;rsquo;ve setup my machine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Snapper (snapshot system for Fedora)&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf in snapper dnf-plugin-snapper btrfs-assistant&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo snapper create-config /&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;nvidia-driver&#34;&gt;Nvidia Driver&lt;/h1&gt;&#xA;&lt;p&gt;Start with purging if there&amp;rsquo;s something needs to go.&lt;br&gt;&#xA;&lt;code&gt;sudo dnf remove xorg-x11-drv-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove akmod-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove nvidia-vaapi-driver&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;These are needed to compile modules and DKMS&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fedora Gaming Setup Guide</title>
       <link>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</link>
       <pubDate>Tue, 06 Aug 2024 20:36:57 +0200</pubDate>
-      
       <guid>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</guid>
-      <description>This is a page about »Fedora Gaming Setup Guide« This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 https://fedoraproject.org/workstation/
-Speed up DNF sudo nano /etc/dnf/dnf.conf
-Add this:
-max_parallel_downloads=20 fastestmirror=True I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.</description>
+      <description>&lt;p&gt;This is a page about »Fedora Gaming Setup Guide«&#xA;This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 &lt;a href=&#34;https://fedoraproject.org/workstation/&#34;&gt;https://fedoraproject.org/workstation/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;speed-up-dnf&#34;&gt;Speed up DNF&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo nano /etc/dnf/dnf.conf&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Add this:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;max_parallel_downloads=20&#xA;fastestmirror=True&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

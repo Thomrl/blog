@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://thomrl.github.io/blog/images/favicon.png" />
+<title>Fedora 42 Gaming Setup | Thomrl&#39;s Blog</title>
+<meta name="title" content="Fedora 42 Gaming Setup" />
+<meta name="description" content="This is a page about »Fedora 42 Gaming Setup«.
+Here is how I&rsquo;ve setup my machine.
+Snapshots
+Snapper (snapshot system for Fedora)
+sudo dnf in snapper dnf-plugin-snapper btrfs-assistant
+sudo snapper create-config /
+Nvidia Driver
+Start with purging if there&rsquo;s something needs to go.
+sudo dnf remove xorg-x11-drv-nvidia\*
+sudo dnf remove akmod-nvidia\*
+sudo dnf remove nvidia-vaapi-driver
+These are needed to compile modules and DKMS
+sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland" />
+<meta name="keywords" content="fedora,firefox,gaming,git,github,linux,media,qol,reinstall,security,software,terminal,tips,windows," />
+
+
+<meta property="og:url" content="https://thomrl.github.io/blog/fedora-42-gaming-setup/">
+  <meta property="og:site_name" content="Thomrl&#39;s Blog">
+  <meta property="og:title" content="Fedora 42 Gaming Setup">
+  <meta property="og:description" content="This is a page about »Fedora 42 Gaming Setup«.
+Here is how I’ve setup my machine.
+Snapshots Snapper (snapshot system for Fedora)
+sudo dnf in snapper dnf-plugin-snapper btrfs-assistant
+sudo snapper create-config /
+Nvidia Driver Start with purging if there’s something needs to go.
+sudo dnf remove xorg-x11-drv-nvidia\*
+sudo dnf remove akmod-nvidia\*
+sudo dnf remove nvidia-vaapi-driver
+These are needed to compile modules and DKMS
+sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-04-29T01:12:26+02:00">
+    <meta property="article:modified_time" content="2025-04-29T01:12:26+02:00">
+    <meta property="article:tag" content="Fedora">
+    <meta property="article:tag" content="Firefox">
+    <meta property="article:tag" content="Gaming">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Github">
+    <meta property="article:tag" content="Linux">
+    <meta property="og:image" content="https://thomrl.github.io/blog/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://thomrl.github.io/blog/images/share.png">
+  <meta name="twitter:title" content="Fedora 42 Gaming Setup">
+  <meta name="twitter:description" content="This is a page about »Fedora 42 Gaming Setup«.
+Here is how I’ve setup my machine.
+Snapshots Snapper (snapshot system for Fedora)
+sudo dnf in snapper dnf-plugin-snapper btrfs-assistant
+sudo snapper create-config /
+Nvidia Driver Start with purging if there’s something needs to go.
+sudo dnf remove xorg-x11-drv-nvidia\*
+sudo dnf remove akmod-nvidia\*
+sudo dnf remove nvidia-vaapi-driver
+These are needed to compile modules and DKMS
+sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland">
+
+
+
+
+  <meta itemprop="name" content="Fedora 42 Gaming Setup">
+  <meta itemprop="description" content="This is a page about »Fedora 42 Gaming Setup«.
+Here is how I’ve setup my machine.
+Snapshots Snapper (snapshot system for Fedora)
+sudo dnf in snapper dnf-plugin-snapper btrfs-assistant
+sudo snapper create-config /
+Nvidia Driver Start with purging if there’s something needs to go.
+sudo dnf remove xorg-x11-drv-nvidia\*
+sudo dnf remove akmod-nvidia\*
+sudo dnf remove nvidia-vaapi-driver
+These are needed to compile modules and DKMS
+sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland">
+  <meta itemprop="datePublished" content="2025-04-29T01:12:26+02:00">
+  <meta itemprop="dateModified" content="2025-04-29T01:12:26+02:00">
+  <meta itemprop="wordCount" content="317">
+  <meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png">
+  <meta itemprop="keywords" content="Fedora,Firefox,Gaming,Git,Github,Linux,Media,QoL,Reinstall,Security,Software,Terminal,Tips,Windows">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/blog/" class="title">
+  <h2>Thomrl&#39;s Blog</h2>
+</a>
+<nav><a href="/blog/">Home</a>
+
+<a href="/blog/now/">Now</a>
+
+
+<a href="/blog/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Fedora 42 Gaming Setup</h1>
+<p>
+  <i>
+    <time datetime='2025-04-29' pubdate>
+      29 Apr, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>This is a page about »Fedora 42 Gaming Setup«.</p>
+<p>Here is how I&rsquo;ve setup my machine.</p>
+<h1 id="snapshots">Snapshots</h1>
+<p><strong>Snapper (snapshot system for Fedora)</strong><br>
+<code>sudo dnf in snapper dnf-plugin-snapper btrfs-assistant</code></p>
+<p><code>sudo snapper create-config /</code></p>
+<h1 id="nvidia-driver">Nvidia Driver</h1>
+<p>Start with purging if there&rsquo;s something needs to go.<br>
+<code>sudo dnf remove xorg-x11-drv-nvidia\*</code></p>
+<p><code>sudo dnf remove akmod-nvidia\*</code></p>
+<p><code>sudo dnf remove nvidia-vaapi-driver</code></p>
+<p><strong>These are needed to compile modules and DKMS</strong><br>
+<code>sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland</code></p>
+<p>Download the driver<br>
+<a href="https://www.nvidia.com/en-us/drivers/unix/">https://www.nvidia.com/en-us/drivers/unix/</a></p>
+<p><code>echo &quot;blacklist nouveau&quot; &gt;&gt; /etc/modprobe.d/blacklist.conf</code></p>
+<pre tabindex="0"><code>echo &#34;options nvidia NVreg_PreserveVideoMemoryAllocations=1&#34; &gt;&gt; /etc/modprobe.d/nvidia.conf
+echo &#34;options nvidia-drm modeset=1 fbdev=1&#34; &gt;&gt; /etc/modprobe.d/nvidia.conf
+</code></pre><p><code>export CC=&quot;gcc -std=gnu17&quot;</code></p>
+<pre tabindex="0"><code>## Backup old initramfs nouveau image ##
+mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r)-nouveau.img
+ 
+## Create new initramfs image ##
+dracut /boot/initramfs-$(uname -r).img $(uname -r)
+</code></pre><p><code>cd Downloads</code></p>
+<p><code>chmod +x NVIDIA-Linux-x86_64-555.52.04.run</code> version varies\</p>
+<p>Only if you have no su, do <br>
+<code>sudo passwd</code>
+to change your root passwd.</p>
+<p>when you have an su, do <code>su</code> and enter root/su password</p>
+<p>next, to finally start installing the driver, do: <br>
+<code>./NVIDIA-Linux-x86_64-555.52.04.run</code> version varies</p>
+<p>I learned something new from: <a href="https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/">https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/</a></p>
+<h1 id="xbox-one-controller-firmware-for-linux">Xbox One Controller firmware for linux</h1>
+<p><a href="https://github.com/dlundqvist/xone">https://github.com/dlundqvist/xone</a></p>
+<h1 id="recommended-software">Recommended software</h1>
+<p>Wine<br>
+Winetricks<br>
+lutris<br>
+<code> dnf in wine winetricks lutris</code></p>
+<p>ProtonUp-Qt<br>
+protontricks<br>
+Heroic Games Launcher</p>
+<p>lutris - Install world of warcraft<br>
+<a href="https://lutris.net/games/world-of-warcraft/">https://lutris.net/games/world-of-warcraft/</a></p>
+<p>headsetcontrol<br>
+htop - system monitor, alternative</p>
+<h1 id="fix-steam-download-speeds">Fix steam download speeds</h1>
+<p>DONT DO THIS IF STEAM IS DOWNLOADING IN A PROPER RATE<br>
+<code>nano ~/.steam/steam/steam_dev.cfg</code></p>
+<p>The command above makes the file</p>
+<pre tabindex="0"><code>@nClientDownloadEnableHTTP2PlatformLinux 0
+@fDownloadRateImprovementToAddAnotherConnection 1.0
+</code></pre><h1 id="how-to-boot-into-the-command-line">How to boot into the command line</h1>
+<p>Go into the command line on start up through the grub boot menu.
+When you are in the grub menu on boot up,
+Press E on your distro of choice, find the linux boot line thinghy.
+Go to the end of the string and make sure it ends with <code> 3</code>
+<em>So a space between the last letter and then the number 3.</em>
+Then press F10.
+It should now load the command line.</p>
+
+</content>
+<p>
+  
+  <a href="https://thomrl.github.io/blog/blog/fedora/">#Fedora</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/firefox/">#Firefox</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/gaming/">#Gaming</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/git/">#Git</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/github/">#Github</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/linux/">#Linux</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/media/">#Media</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/qol/">#QoL</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/reinstall/">#Reinstall</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/security/">#Security</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/software/">#Software</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/terminal/">#Terminal</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/tips/">#Tips</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/windows/">#Windows</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

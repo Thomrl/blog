@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>security on Thomrl&#39;s Blog</title>
+    <title>Security on Thomrl&#39;s Blog</title>
     <link>https://thomrl.github.io/blog/blog/security/</link>
-    <description>Recent content in security on Thomrl&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Security on Thomrl&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
-    <lastBuildDate>Mon, 21 Apr 2025 02:52:34 +0200</lastBuildDate><atom:link href="https://thomrl.github.io/blog/blog/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 01:12:26 +0200</lastBuildDate>
+    <atom:link href="https://thomrl.github.io/blog/blog/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fedora 42 Gaming Setup</title>
+      <link>https://thomrl.github.io/blog/fedora-42-gaming-setup/</link>
+      <pubDate>Tue, 29 Apr 2025 01:12:26 +0200</pubDate>
+      <guid>https://thomrl.github.io/blog/fedora-42-gaming-setup/</guid>
+      <description>&lt;p&gt;This is a page about »Fedora 42 Gaming Setup«.&lt;/p&gt;&#xA;&lt;p&gt;Here is how I&amp;rsquo;ve setup my machine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Snapper (snapshot system for Fedora)&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf in snapper dnf-plugin-snapper btrfs-assistant&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo snapper create-config /&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;nvidia-driver&#34;&gt;Nvidia Driver&lt;/h1&gt;&#xA;&lt;p&gt;Start with purging if there&amp;rsquo;s something needs to go.&lt;br&gt;&#xA;&lt;code&gt;sudo dnf remove xorg-x11-drv-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove akmod-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove nvidia-vaapi-driver&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;These are needed to compile modules and DKMS&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to Stay Safe Browsing the Web</title>
       <link>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</link>
       <pubDate>Mon, 21 Apr 2025 02:52:34 +0200</pubDate>
-      
       <guid>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</guid>
-      <description>This is a page about »How to stay safe while browsing the Web«.
-Starting out with this post lacking a few things. I will update it later where I also include links to the things I&amp;rsquo;m talking about.
-Install an adblocker on your browser (This can be tricky if you use google chrome, and I highly recommend using another browser.) Why install an adblocker? I have experienced so many times where I&amp;rsquo;ve told a friend or family member to download a program from a website I&amp;rsquo;ve specified.</description>
+      <description>&lt;p&gt;This is a page about »How to stay safe while browsing the Web«.&lt;/p&gt;&#xA;&lt;p&gt;Starting out with this post lacking a few things. I will update it later where I also include links to the things I&amp;rsquo;m talking about.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Install an adblocker on your browser (This can be tricky if you use google chrome, and I highly recommend using another browser.)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;why-install-an-adblocker&#34;&gt;Why install an adblocker?&lt;/h3&gt;&#xA;&lt;p&gt;I have experienced so many times where I&amp;rsquo;ve told a friend or family member to download a program from a website I&amp;rsquo;ve specified. They click download on the website I&amp;rsquo;ve specified, and to my surprise they didn&amp;rsquo;t download the correct thing. The reason being, I use an adblocker but they didn&amp;rsquo;t and the ads they see say &amp;ldquo;download&amp;rdquo;. This clearly shows that ads are a huge security nightmare. There&amp;rsquo;s also so many other annoyances ads include, sponsored search results (ads) can be leading you to a website containing malware, they can play unwanted sound and the list goes on. So really, I very much recommend you to Install an adblocker.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
