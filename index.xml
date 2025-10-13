@@ -70,7 +70,7 @@
       <link>https://thomrl.github.io/blog/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://thomrl.github.io/blog/now/</guid>
-      <description>&lt;p&gt;Not much to see here yet, check out the blog.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Last updated 13th October 2025.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mostly-busy-learning&#34;&gt;Mostly busy learning&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently studying Data and Communication at a vocational school in Denmark and looking for a traineeship.&lt;/p&gt;&#xA;&lt;p&gt;Some topics and tools from the program excite me so much I bring them home to tinker with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Documentation - it has saved me multiple times in class&lt;/li&gt;&#xA;&lt;li&gt;Bash scripting&lt;/li&gt;&#xA;&lt;li&gt;Proxmox - using it as a VM host is new to me, but now part of my home lab&lt;/li&gt;&#xA;&lt;li&gt;PXE network booting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;These extra hands‑on experiments help solidify what I learn in class.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
