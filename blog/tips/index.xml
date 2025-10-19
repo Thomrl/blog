@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
-    <lastBuildDate>Mon, 21 Apr 2025 02:52:34 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 19 Oct 2025 02:08:55 +0200</lastBuildDate>
     <atom:link href="https://thomrl.github.io/blog/blog/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My (Fedora) Linux Challenges and How I Solved Them</title>
+      <link>https://thomrl.github.io/blog/my-fedora-linux-challenges-and-how-i-solved-them/</link>
+      <pubDate>Sun, 19 Oct 2025 02:08:55 +0200</pubDate>
+      <guid>https://thomrl.github.io/blog/my-fedora-linux-challenges-and-how-i-solved-them/</guid>
+      <description>&lt;p&gt;While Linux has gotten very far, and has become such a joy to use that I use it daily on my main computer, some issues still have popped up. So far nothing so big that it has scared me away, but still enough for me to find it a good idea to note down some solutions to a few issues here. Also I want to note that I believe these issues I&amp;rsquo;ve stumbled upon happened because I installed the proprietary NVIDIA driver on my system, and Fedora not expecting it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to Stay Safe Browsing the Web</title>
       <link>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</link>
