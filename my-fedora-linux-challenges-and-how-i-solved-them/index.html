@@ -41,7 +41,7 @@
   <meta itemprop="description" content="While Linux has gotten very far, and has become such a joy to use that I use it daily on my main computer, some issues still have popped up. So far nothing so big that it has scared me away, but still enough for me to find it a good idea to note down some solutions to a few issues here. Also I want to note that I believe these issues I’ve stumbled upon happened because I installed the proprietary NVIDIA driver on my system, and Fedora not expecting it.">
   <meta itemprop="datePublished" content="2025-10-19T02:08:55+02:00">
   <meta itemprop="dateModified" content="2025-10-19T02:08:55+02:00">
-  <meta itemprop="wordCount" content="378">
+  <meta itemprop="wordCount" content="387">
   <meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png">
   <meta itemprop="keywords" content="Fedora,Linux,Tips">
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -258,7 +258,7 @@ In this conf file I changed <code>installonly_limit=3</code> to <code>installonl
 <code>sudo dnf remove --oldinstallonly</code></p>
 <p><code>uname -r</code> &lt;- Returns which kernel is currently in use.<br>
 <code>rpm -q kernel-core</code> &lt;- Lists currently installed kernels.<br>
-<code>sudo dnf remove kernel-core-6.15.7-200.fc42.x86_64</code></p>
+<code>sudo dnf remove kernel-core-6.15.7-200.fc42.x86_64</code> &lt;- adjust to the kernel you wish to delete.</p>
 <hr>
 <h2 id="not-being-able-to-boot-as-should">Not being able to boot as should.</h2>
 <p>When this happens I install or reinstall the newest NVIDIA driver through the terminal, since I have a NVIDIA GPU in my computer. It usually does the trick.</p>
