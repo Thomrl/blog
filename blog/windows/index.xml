@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on Thomrl&#39;s Blog</title>
-    <link>https://thomrl.github.io/blog/blog/windows/</link>
+    <link>http://localhost:1313/blog/blog/windows/</link>
     <description>Recent content in Windows on Thomrl&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
     <lastBuildDate>Fri, 11 Oct 2024 13:52:14 +0200</lastBuildDate>
-    <atom:link href="https://thomrl.github.io/blog/blog/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/blog/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows - First Steps</title>
-      <link>https://thomrl.github.io/blog/windows-first-steps/</link>
+      <link>http://localhost:1313/blog/windows-first-steps/</link>
       <pubDate>Fri, 11 Oct 2024 13:52:14 +0200</pubDate>
-      <guid>https://thomrl.github.io/blog/windows-first-steps/</guid>
+      <guid>http://localhost:1313/blog/windows-first-steps/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Go to Microsoft Store and make sure things in there is updated.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run Chris Titus Tech&amp;rsquo;s Windows Utility (&lt;a href=&#34;https://github.com/ChrisTitusTech/winutil/&#34;&gt;Github link&lt;/a&gt;).&lt;br&gt;&#xA;Here I will:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed.&lt;/li&gt;&#xA;&lt;li&gt;Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends. (Config tab).&lt;/li&gt;&#xA;&lt;li&gt;Disable Search Box Web Suggestions.&lt;/li&gt;&#xA;&lt;li&gt;Go to the Tweaks tab, press Standard, and go through what it does.&#xA;In this tool you can point with your mouse on differing things and it will give you more information about what that thing does.&lt;/li&gt;&#xA;&lt;li&gt;Change DNS in a lot of cases, but not on my own PCs as I&amp;rsquo;m running Pi.Hole on my network.&lt;/li&gt;&#xA;&lt;li&gt;Run OO Shutup 10, to prevent Windows from spying.&lt;/li&gt;&#xA;&lt;li&gt;Create Winutil shortcut and Run tweaks.&#xA;Winutil can also be used to install software.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install a browser through the command prompt (CMD) using Winget.&#xA;To install firefox &lt;code&gt;winget install Mozilla.Firefox&lt;/code&gt;&#xA;To install brave &lt;code&gt;winget install Brave.Brave&lt;/code&gt;&#xA;Then I will also go to &lt;code&gt;Settings &amp;gt; Apps &amp;gt; Default Apps&lt;/code&gt; in Windows and pick the installed browser as default browser.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows Useful Software Tips and Tricks</title>
-      <link>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</link>
+      <link>http://localhost:1313/blog/windows-useful-software-tips-and-tricks/</link>
       <pubDate>Fri, 11 Oct 2024 13:13:12 +0200</pubDate>
-      <guid>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</guid>
+      <guid>http://localhost:1313/blog/windows-useful-software-tips-and-tricks/</guid>
       <description>&lt;p&gt;Here are things I use to get things done faster in windows. They offer quality of life and makes things less of a hassle. All for free.&#xA;I will add more over time.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Go to section about:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#ninite&#34;&gt;Ninite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#winget&#34;&gt;Winget&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#sharex&#34;&gt;ShareX&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ninite&#34;&gt;Ninite&lt;/h2&gt;&#xA;&lt;p&gt;Ninite is a great tool. You go to the website &lt;a href=&#34;https://ninite.com/&#34;&gt;https://ninite.com/&lt;/a&gt; pick the apps you want on your computer, and then you go down and press &amp;ldquo;Get Your Ninite&amp;rdquo;. It will download a Ninite installer which will automatically download and install the apps you picked to be installed. It has done a lot of wonders.&lt;/p&gt;</description>
     </item>
   </channel>

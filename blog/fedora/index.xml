@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fedora on Thomrl&#39;s Blog</title>
-    <link>https://thomrl.github.io/blog/blog/fedora/</link>
+    <link>http://localhost:1313/blog/blog/fedora/</link>
     <description>Recent content in Fedora on Thomrl&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
     <lastBuildDate>Sun, 19 Oct 2025 02:08:55 +0200</lastBuildDate>
-    <atom:link href="https://thomrl.github.io/blog/blog/fedora/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/blog/fedora/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My (Fedora) Linux Challenges and How I Solved Them</title>
-      <link>https://thomrl.github.io/blog/my-fedora-linux-challenges-and-how-i-solved-them/</link>
+      <link>http://localhost:1313/blog/my-fedora-linux-challenges-and-how-i-solved-them/</link>
       <pubDate>Sun, 19 Oct 2025 02:08:55 +0200</pubDate>
-      <guid>https://thomrl.github.io/blog/my-fedora-linux-challenges-and-how-i-solved-them/</guid>
+      <guid>http://localhost:1313/blog/my-fedora-linux-challenges-and-how-i-solved-them/</guid>
       <description>&lt;p&gt;While Linux has gotten very far, and has become such a joy to use that I use it daily on my main computer, some issues still have popped up. So far nothing so big that it has scared me away, but still enough for me to find it a good idea to note down some solutions to a few issues here. Also I want to note that I believe these issues I&amp;rsquo;ve stumbled upon happened because I installed the proprietary NVIDIA driver on my system, and Fedora not expecting it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Syncthing on Linux</title>
-      <link>https://thomrl.github.io/blog/syncthing-on-linux/</link>
+      <link>http://localhost:1313/blog/syncthing-on-linux/</link>
       <pubDate>Tue, 29 Apr 2025 02:38:35 +0200</pubDate>
-      <guid>https://thomrl.github.io/blog/syncthing-on-linux/</guid>
+      <guid>http://localhost:1313/blog/syncthing-on-linux/</guid>
       <description>&lt;p&gt;This is a page about »Syncthing on Linux«.&lt;/p&gt;&#xA;&lt;h3 id=&#34;debianraspberrypi-years-ago-probably-outdated&#34;&gt;Debian/RaspberryPi (Years ago, probably outdated)&lt;/h3&gt;&#xA;&lt;p&gt;Follow the documentation&lt;/p&gt;&#xA;&lt;p&gt;Then &lt;code&gt;nano ~/.config/syncthing/config.xml&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Find the following&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;gui enabled&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; tls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt; debugging&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;address&amp;gt;127.0.0.1:8384&amp;lt;/address&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;apikey&amp;gt;&amp;lt;/apikey&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;theme&amp;gt;default&amp;lt;/theme&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/gui&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And replace the 127.0.0.1:8384 with 0.0.0.0:8384.&#xA;Now any machine on the local network can access the program.&lt;br&gt;&#xA;Save and Close&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;fedora&#34;&gt;Fedora&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf in syncthing&lt;/code&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;make-it-start-on-system-boot&#34;&gt;Make it start on system boot.&lt;/h3&gt;&#xA;&lt;p&gt;To make it a service that can start up on it&amp;rsquo;s own when turning on the machine&lt;br&gt;&#xA;&lt;code&gt;systemctl enable syncthing@[username].service&lt;/code&gt;&lt;br&gt;&#xA;&lt;code&gt;systemctl start syncthing@[username].service&lt;/code&gt; to start it right away&lt;br&gt;&#xA;Make sure to replace [username] with your username.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fedora 42 Gaming Setup</title>
-      <link>https://thomrl.github.io/blog/fedora-42-gaming-setup/</link>
+      <link>http://localhost:1313/blog/fedora-42-gaming-setup/</link>
       <pubDate>Tue, 29 Apr 2025 01:12:26 +0200</pubDate>
-      <guid>https://thomrl.github.io/blog/fedora-42-gaming-setup/</guid>
+      <guid>http://localhost:1313/blog/fedora-42-gaming-setup/</guid>
       <description>&lt;p&gt;This is a page about »Fedora 42 Gaming Setup«.&lt;/p&gt;&#xA;&lt;p&gt;Here is how I&amp;rsquo;ve setup my machine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Snapper (snapshot system for Fedora)&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf in snapper dnf-plugin-snapper btrfs-assistant&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo snapper create-config /&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;nvidia-driver&#34;&gt;Nvidia Driver&lt;/h1&gt;&#xA;&lt;p&gt;Start with purging if there&amp;rsquo;s something needs to go.&lt;br&gt;&#xA;&lt;code&gt;sudo dnf remove xorg-x11-drv-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove akmod-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove nvidia-vaapi-driver&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;These are needed to compile modules and DKMS&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fedora Gaming Setup Guide</title>
-      <link>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</link>
+      <link>http://localhost:1313/blog/fedora-gaming-setup-guide/</link>
       <pubDate>Tue, 06 Aug 2024 20:36:57 +0200</pubDate>
-      <guid>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</guid>
+      <guid>http://localhost:1313/blog/fedora-gaming-setup-guide/</guid>
       <description>&lt;p&gt;This is a page about »Fedora Gaming Setup Guide«&#xA;This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 &lt;a href=&#34;https://fedoraproject.org/workstation/&#34;&gt;https://fedoraproject.org/workstation/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;speed-up-dnf&#34;&gt;Speed up DNF&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo nano /etc/dnf/dnf.conf&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Add this:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;max_parallel_downloads=20&#xA;fastestmirror=True&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

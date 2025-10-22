@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on Thomrl&#39;s Blog</title>
-    <link>https://thomrl.github.io/blog/blog/github/</link>
+    <link>http://localhost:1313/blog/blog/github/</link>
     <description>Recent content in Github on Thomrl&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
     <lastBuildDate>Fri, 11 Oct 2024 16:57:24 +0200</lastBuildDate>
-    <atom:link href="https://thomrl.github.io/blog/blog/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/blog/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Github - How to Push Files to a Repository in Terminal</title>
-      <link>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</link>
+      <link>http://localhost:1313/blog/github-how-to-push-files-to-a-repository-in-terminal/</link>
       <pubDate>Fri, 11 Oct 2024 16:57:24 +0200</pubDate>
-      <guid>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</guid>
+      <guid>http://localhost:1313/blog/github-how-to-push-files-to-a-repository-in-terminal/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m rusty with this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.&lt;br&gt;&#xA;I&amp;rsquo;ll come back to this.&lt;/p&gt;&#xA;&lt;h1 id=&#34;when-it-has-been-setup&#34;&gt;When it has been setup&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt; To add all files in the directory to the next commit.&lt;br&gt;&#xA;&lt;code&gt;git commit -m &amp;quot;[title of commit]&amp;quot; .&lt;/code&gt; Create a commit.&lt;br&gt;&#xA;&lt;code&gt;git push -u origin main&lt;/code&gt; Push/Upload the commits in the queue.&lt;/p&gt;</description>
     </item>
   </channel>

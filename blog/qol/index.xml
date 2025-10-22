@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QoL on Thomrl&#39;s Blog</title>
-    <link>https://thomrl.github.io/blog/blog/qol/</link>
+    <link>http://localhost:1313/blog/blog/qol/</link>
     <description>Recent content in QoL on Thomrl&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
     <lastBuildDate>Fri, 11 Oct 2024 13:13:12 +0200</lastBuildDate>
-    <atom:link href="https://thomrl.github.io/blog/blog/qol/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/blog/qol/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows Useful Software Tips and Tricks</title>
-      <link>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</link>
+      <link>http://localhost:1313/blog/windows-useful-software-tips-and-tricks/</link>
       <pubDate>Fri, 11 Oct 2024 13:13:12 +0200</pubDate>
-      <guid>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</guid>
+      <guid>http://localhost:1313/blog/windows-useful-software-tips-and-tricks/</guid>
       <description>&lt;p&gt;Here are things I use to get things done faster in windows. They offer quality of life and makes things less of a hassle. All for free.&#xA;I will add more over time.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Go to section about:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#ninite&#34;&gt;Ninite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#winget&#34;&gt;Winget&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#sharex&#34;&gt;ShareX&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ninite&#34;&gt;Ninite&lt;/h2&gt;&#xA;&lt;p&gt;Ninite is a great tool. You go to the website &lt;a href=&#34;https://ninite.com/&#34;&gt;https://ninite.com/&lt;/a&gt; pick the apps you want on your computer, and then you go down and press &amp;ldquo;Get Your Ninite&amp;rdquo;. It will download a Ninite installer which will automatically download and install the apps you picked to be installed. It has done a lot of wonders.&lt;/p&gt;</description>
     </item>
   </channel>
