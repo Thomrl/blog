@@ -2,81 +2,81 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/blog/</loc>
+    <loc>https://thomrl.github.io/blog/blog/</loc>
     <lastmod>2025-10-19T02:08:55+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/fedora/</loc>
+    <loc>https://thomrl.github.io/blog/blog/fedora/</loc>
     <lastmod>2025-10-19T02:08:55+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/linux/</loc>
+    <loc>https://thomrl.github.io/blog/blog/linux/</loc>
     <lastmod>2025-10-19T02:08:55+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/my-fedora-linux-challenges-and-how-i-solved-them/</loc>
+    <loc>https://thomrl.github.io/blog/my-fedora-linux-challenges-and-how-i-solved-them/</loc>
     <lastmod>2025-10-19T02:08:55+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://thomrl.github.io/blog/</loc>
     <lastmod>2025-10-19T02:08:55+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/tips/</loc>
+    <loc>https://thomrl.github.io/blog/blog/tips/</loc>
     <lastmod>2025-10-19T02:08:55+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/software/</loc>
+    <loc>https://thomrl.github.io/blog/blog/software/</loc>
     <lastmod>2025-04-29T02:38:35+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/syncthing-on-linux/</loc>
+    <loc>https://thomrl.github.io/blog/syncthing-on-linux/</loc>
     <lastmod>2025-04-29T02:38:35+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/terminal/</loc>
+    <loc>https://thomrl.github.io/blog/blog/terminal/</loc>
     <lastmod>2025-04-29T02:38:35+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/fedora-42-gaming-setup/</loc>
+    <loc>https://thomrl.github.io/blog/fedora-42-gaming-setup/</loc>
     <lastmod>2025-04-29T01:12:26+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/gaming/</loc>
+    <loc>https://thomrl.github.io/blog/blog/gaming/</loc>
     <lastmod>2025-04-29T01:12:26+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/how-to-stay-safe-browsing-the-web/</loc>
+    <loc>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</loc>
     <lastmod>2025-04-21T02:52:34+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/security/</loc>
+    <loc>https://thomrl.github.io/blog/blog/security/</loc>
     <lastmod>2025-04-21T02:52:34+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/git/</loc>
+    <loc>https://thomrl.github.io/blog/blog/git/</loc>
     <lastmod>2024-10-11T16:57:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/github/</loc>
+    <loc>https://thomrl.github.io/blog/blog/github/</loc>
     <lastmod>2024-10-11T16:57:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/github-how-to-push-files-to-a-repository-in-terminal/</loc>
+    <loc>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</loc>
     <lastmod>2024-10-11T16:57:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/reinstall/</loc>
+    <loc>https://thomrl.github.io/blog/blog/reinstall/</loc>
     <lastmod>2024-10-11T13:52:14+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/windows/</loc>
+    <loc>https://thomrl.github.io/blog/blog/windows/</loc>
     <lastmod>2024-10-11T13:52:14+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/windows-first-steps/</loc>
+    <loc>https://thomrl.github.io/blog/windows-first-steps/</loc>
     <lastmod>2024-10-11T13:52:14+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/qol/</loc>
+    <loc>https://thomrl.github.io/blog/blog/qol/</loc>
     <lastmod>2024-10-11T13:13:12+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/windows-useful-software-tips-and-tricks/</loc>
+    <loc>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</loc>
     <lastmod>2024-10-11T13:13:12+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/fedora-gaming-setup-guide/</loc>
+    <loc>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</loc>
     <lastmod>2024-08-06T20:36:57+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/disable-hardware-media-keys-on-firefox/</loc>
+    <loc>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</loc>
     <lastmod>2019-05-02T19:13:53+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/firefox/</loc>
+    <loc>https://thomrl.github.io/blog/blog/firefox/</loc>
     <lastmod>2019-05-02T19:13:53+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog/media/</loc>
+    <loc>https://thomrl.github.io/blog/blog/media/</loc>
     <lastmod>2019-05-02T19:13:53+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/now/</loc>
+    <loc>https://thomrl.github.io/blog/now/</loc>
   </url>
 </urlset>

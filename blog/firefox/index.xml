@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firefox on Thomrl&#39;s Blog</title>
-    <link>http://localhost:1313/blog/blog/firefox/</link>
+    <link>https://thomrl.github.io/blog/blog/firefox/</link>
     <description>Recent content in Firefox on Thomrl&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
     <lastBuildDate>Thu, 02 May 2019 19:13:53 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/blog/firefox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://thomrl.github.io/blog/blog/firefox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Disable Hardware Media Keys on Firefox</title>
-      <link>http://localhost:1313/blog/disable-hardware-media-keys-on-firefox/</link>
+      <link>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</link>
       <pubDate>Thu, 02 May 2019 19:13:53 +0200</pubDate>
-      <guid>http://localhost:1313/blog/disable-hardware-media-keys-on-firefox/</guid>
+      <guid>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</guid>
       <description>&lt;p&gt;This is a page about »Disable Hardware Media Keys on Firefox«.&lt;/p&gt;&#xA;&lt;h1 id=&#34;guide-starts-here&#34;&gt;Guide starts here&lt;/h1&gt;&#xA;&lt;p&gt;Write &lt;code&gt;about:config&lt;/code&gt; or copy and paste it into the URL field of firefox to access Advanced Preferences.&lt;/p&gt;&#xA;&lt;p&gt;Click &lt;code&gt;Accept the Risk and Continue&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Search for &lt;code&gt;media.hardwaremediakeys.enabled&lt;/code&gt; in the search preference name field.&lt;/p&gt;&#xA;&lt;p&gt;In the second field make sure it says &lt;code&gt;false&lt;/code&gt; instead of &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s it, if it doesn&amp;rsquo;t work after these steps, you might need to close firefox and open it up again.&lt;/p&gt;</description>
     </item>
   </channel>

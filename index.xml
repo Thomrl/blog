@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thomrl on Thomrl&#39;s Blog</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://thomrl.github.io/blog/</link>
     <description>Recent content in Thomrl on Thomrl&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, Thomrl.</copyright>
     <lastBuildDate>Sun, 19 Oct 2025 02:08:55 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://thomrl.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My (Fedora) Linux Challenges and How I Solved Them</title>
-      <link>http://localhost:1313/blog/my-fedora-linux-challenges-and-how-i-solved-them/</link>
+      <link>https://thomrl.github.io/blog/my-fedora-linux-challenges-and-how-i-solved-them/</link>
       <pubDate>Sun, 19 Oct 2025 02:08:55 +0200</pubDate>
-      <guid>http://localhost:1313/blog/my-fedora-linux-challenges-and-how-i-solved-them/</guid>
+      <guid>https://thomrl.github.io/blog/my-fedora-linux-challenges-and-how-i-solved-them/</guid>
       <description>&lt;p&gt;While Linux has gotten very far, and has become such a joy to use that I use it daily on my main computer, some issues still have popped up. So far nothing so big that it has scared me away, but still enough for me to find it a good idea to note down some solutions to a few issues here. Also I want to note that I believe these issues I&amp;rsquo;ve stumbled upon happened because I installed the proprietary NVIDIA driver on my system, and Fedora not expecting it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Syncthing on Linux</title>
-      <link>http://localhost:1313/blog/syncthing-on-linux/</link>
+      <link>https://thomrl.github.io/blog/syncthing-on-linux/</link>
       <pubDate>Tue, 29 Apr 2025 02:38:35 +0200</pubDate>
-      <guid>http://localhost:1313/blog/syncthing-on-linux/</guid>
+      <guid>https://thomrl.github.io/blog/syncthing-on-linux/</guid>
       <description>&lt;p&gt;This is a page about »Syncthing on Linux«.&lt;/p&gt;&#xA;&lt;h3 id=&#34;debianraspberrypi-years-ago-probably-outdated&#34;&gt;Debian/RaspberryPi (Years ago, probably outdated)&lt;/h3&gt;&#xA;&lt;p&gt;Follow the documentation&lt;/p&gt;&#xA;&lt;p&gt;Then &lt;code&gt;nano ~/.config/syncthing/config.xml&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Find the following&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;gui enabled&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; tls&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt; debugging&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;address&amp;gt;127.0.0.1:8384&amp;lt;/address&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;apikey&amp;gt;&amp;lt;/apikey&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;theme&amp;gt;default&amp;lt;/theme&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/gui&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And replace the 127.0.0.1:8384 with 0.0.0.0:8384.&#xA;Now any machine on the local network can access the program.&lt;br&gt;&#xA;Save and Close&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;fedora&#34;&gt;Fedora&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf in syncthing&lt;/code&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;make-it-start-on-system-boot&#34;&gt;Make it start on system boot.&lt;/h3&gt;&#xA;&lt;p&gt;To make it a service that can start up on it&amp;rsquo;s own when turning on the machine&lt;br&gt;&#xA;&lt;code&gt;systemctl enable syncthing@[username].service&lt;/code&gt;&lt;br&gt;&#xA;&lt;code&gt;systemctl start syncthing@[username].service&lt;/code&gt; to start it right away&lt;br&gt;&#xA;Make sure to replace [username] with your username.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fedora 42 Gaming Setup</title>
-      <link>http://localhost:1313/blog/fedora-42-gaming-setup/</link>
+      <link>https://thomrl.github.io/blog/fedora-42-gaming-setup/</link>
       <pubDate>Tue, 29 Apr 2025 01:12:26 +0200</pubDate>
-      <guid>http://localhost:1313/blog/fedora-42-gaming-setup/</guid>
+      <guid>https://thomrl.github.io/blog/fedora-42-gaming-setup/</guid>
       <description>&lt;p&gt;This is a page about »Fedora 42 Gaming Setup«.&lt;/p&gt;&#xA;&lt;p&gt;Here is how I&amp;rsquo;ve setup my machine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Snapper (snapshot system for Fedora)&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf in snapper dnf-plugin-snapper btrfs-assistant&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo snapper create-config /&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;nvidia-driver&#34;&gt;Nvidia Driver&lt;/h1&gt;&#xA;&lt;p&gt;Start with purging if there&amp;rsquo;s something needs to go.&lt;br&gt;&#xA;&lt;code&gt;sudo dnf remove xorg-x11-drv-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove akmod-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove nvidia-vaapi-driver&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;These are needed to compile modules and DKMS&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Stay Safe Browsing the Web</title>
-      <link>http://localhost:1313/blog/how-to-stay-safe-browsing-the-web/</link>
+      <link>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</link>
       <pubDate>Mon, 21 Apr 2025 02:52:34 +0200</pubDate>
-      <guid>http://localhost:1313/blog/how-to-stay-safe-browsing-the-web/</guid>
+      <guid>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</guid>
       <description>&lt;p&gt;This is a page about »How to stay safe while browsing the Web«.&lt;/p&gt;&#xA;&lt;p&gt;Starting out with this post lacking a few things. I will update it later where I also include links to the things I&amp;rsquo;m talking about.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Install an adblocker on your browser (This can be tricky if you use google chrome, and I highly recommend using another browser.)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;why-install-an-adblocker&#34;&gt;Why install an adblocker?&lt;/h3&gt;&#xA;&lt;p&gt;I have experienced so many times where I&amp;rsquo;ve told a friend or family member to download a program from a website I&amp;rsquo;ve specified. They click download on the website I&amp;rsquo;ve specified, and to my surprise they didn&amp;rsquo;t download the correct thing. The reason being, I use an adblocker but they didn&amp;rsquo;t and the ads they see say &amp;ldquo;download&amp;rdquo;. This clearly shows that ads are a huge security nightmare. There&amp;rsquo;s also so many other annoyances ads include, sponsored search results (ads) can be leading you to a website containing malware, they can play unwanted sound and the list goes on. So really, I very much recommend you to Install an adblocker.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Github - How to Push Files to a Repository in Terminal</title>
-      <link>http://localhost:1313/blog/github-how-to-push-files-to-a-repository-in-terminal/</link>
+      <link>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</link>
       <pubDate>Fri, 11 Oct 2024 16:57:24 +0200</pubDate>
-      <guid>http://localhost:1313/blog/github-how-to-push-files-to-a-repository-in-terminal/</guid>
+      <guid>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m rusty with this, so there will be some uncertainties at the moment, but it pretty much includes all I did for mine to work.&lt;br&gt;&#xA;I&amp;rsquo;ll come back to this.&lt;/p&gt;&#xA;&lt;h1 id=&#34;when-it-has-been-setup&#34;&gt;When it has been setup&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt; To add all files in the directory to the next commit.&lt;br&gt;&#xA;&lt;code&gt;git commit -m &amp;quot;[title of commit]&amp;quot; .&lt;/code&gt; Create a commit.&lt;br&gt;&#xA;&lt;code&gt;git push -u origin main&lt;/code&gt; Push/Upload the commits in the queue.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows - First Steps</title>
-      <link>http://localhost:1313/blog/windows-first-steps/</link>
+      <link>https://thomrl.github.io/blog/windows-first-steps/</link>
       <pubDate>Fri, 11 Oct 2024 13:52:14 +0200</pubDate>
-      <guid>http://localhost:1313/blog/windows-first-steps/</guid>
+      <guid>https://thomrl.github.io/blog/windows-first-steps/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s what I do when I&amp;rsquo;ve just installed windows on my or a friends computer.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Go to Microsoft Store and make sure things in there is updated.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run Chris Titus Tech&amp;rsquo;s Windows Utility (&lt;a href=&#34;https://github.com/ChrisTitusTech/winutil/&#34;&gt;Github link&lt;/a&gt;).&lt;br&gt;&#xA;Here I will:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Set the computer to delay feature updates for Windows. Security updates will still be installed, but the updates that bring new features that isn&amp;rsquo;t needed will be delayed.&lt;/li&gt;&#xA;&lt;li&gt;Activate &amp;ldquo;Set Up Autologin&amp;rdquo; for some friends. (Config tab).&lt;/li&gt;&#xA;&lt;li&gt;Disable Search Box Web Suggestions.&lt;/li&gt;&#xA;&lt;li&gt;Go to the Tweaks tab, press Standard, and go through what it does.&#xA;In this tool you can point with your mouse on differing things and it will give you more information about what that thing does.&lt;/li&gt;&#xA;&lt;li&gt;Change DNS in a lot of cases, but not on my own PCs as I&amp;rsquo;m running Pi.Hole on my network.&lt;/li&gt;&#xA;&lt;li&gt;Run OO Shutup 10, to prevent Windows from spying.&lt;/li&gt;&#xA;&lt;li&gt;Create Winutil shortcut and Run tweaks.&#xA;Winutil can also be used to install software.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install a browser through the command prompt (CMD) using Winget.&#xA;To install firefox &lt;code&gt;winget install Mozilla.Firefox&lt;/code&gt;&#xA;To install brave &lt;code&gt;winget install Brave.Brave&lt;/code&gt;&#xA;Then I will also go to &lt;code&gt;Settings &amp;gt; Apps &amp;gt; Default Apps&lt;/code&gt; in Windows and pick the installed browser as default browser.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows Useful Software Tips and Tricks</title>
-      <link>http://localhost:1313/blog/windows-useful-software-tips-and-tricks/</link>
+      <link>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</link>
       <pubDate>Fri, 11 Oct 2024 13:13:12 +0200</pubDate>
-      <guid>http://localhost:1313/blog/windows-useful-software-tips-and-tricks/</guid>
+      <guid>https://thomrl.github.io/blog/windows-useful-software-tips-and-tricks/</guid>
       <description>&lt;p&gt;Here are things I use to get things done faster in windows. They offer quality of life and makes things less of a hassle. All for free.&#xA;I will add more over time.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Go to section about:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#ninite&#34;&gt;Ninite&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#winget&#34;&gt;Winget&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;#sharex&#34;&gt;ShareX&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ninite&#34;&gt;Ninite&lt;/h2&gt;&#xA;&lt;p&gt;Ninite is a great tool. You go to the website &lt;a href=&#34;https://ninite.com/&#34;&gt;https://ninite.com/&lt;/a&gt; pick the apps you want on your computer, and then you go down and press &amp;ldquo;Get Your Ninite&amp;rdquo;. It will download a Ninite installer which will automatically download and install the apps you picked to be installed. It has done a lot of wonders.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fedora Gaming Setup Guide</title>
-      <link>http://localhost:1313/blog/fedora-gaming-setup-guide/</link>
+      <link>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</link>
       <pubDate>Tue, 06 Aug 2024 20:36:57 +0200</pubDate>
-      <guid>http://localhost:1313/blog/fedora-gaming-setup-guide/</guid>
+      <guid>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</guid>
       <description>&lt;p&gt;This is a page about »Fedora Gaming Setup Guide«&#xA;This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 &lt;a href=&#34;https://fedoraproject.org/workstation/&#34;&gt;https://fedoraproject.org/workstation/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;speed-up-dnf&#34;&gt;Speed up DNF&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo nano /etc/dnf/dnf.conf&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Add this:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;max_parallel_downloads=20&#xA;fastestmirror=True&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disable Hardware Media Keys on Firefox</title>
-      <link>http://localhost:1313/blog/disable-hardware-media-keys-on-firefox/</link>
+      <link>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</link>
       <pubDate>Thu, 02 May 2019 19:13:53 +0200</pubDate>
-      <guid>http://localhost:1313/blog/disable-hardware-media-keys-on-firefox/</guid>
+      <guid>https://thomrl.github.io/blog/disable-hardware-media-keys-on-firefox/</guid>
       <description>&lt;p&gt;This is a page about »Disable Hardware Media Keys on Firefox«.&lt;/p&gt;&#xA;&lt;h1 id=&#34;guide-starts-here&#34;&gt;Guide starts here&lt;/h1&gt;&#xA;&lt;p&gt;Write &lt;code&gt;about:config&lt;/code&gt; or copy and paste it into the URL field of firefox to access Advanced Preferences.&lt;/p&gt;&#xA;&lt;p&gt;Click &lt;code&gt;Accept the Risk and Continue&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Search for &lt;code&gt;media.hardwaremediakeys.enabled&lt;/code&gt; in the search preference name field.&lt;/p&gt;&#xA;&lt;p&gt;In the second field make sure it says &lt;code&gt;false&lt;/code&gt; instead of &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s it, if it doesn&amp;rsquo;t work after these steps, you might need to close firefox and open it up again.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Now</title>
-      <link>http://localhost:1313/blog/now/</link>
+      <link>https://thomrl.github.io/blog/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/now/</guid>
+      <guid>https://thomrl.github.io/blog/now/</guid>
       <description>&lt;p&gt;Last updated 13th October 2025.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mostly-busy-learning&#34;&gt;Mostly busy learning&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently studying Data and Communication at a vocational school in Denmark and looking for a traineeship.&lt;/p&gt;&#xA;&lt;p&gt;Some topics and tools from the program excite me so much or I learn the importance of them I bring them home to tinker with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Documentation - it has saved me multiple times in class&lt;/li&gt;&#xA;&lt;li&gt;Bash scripting&lt;/li&gt;&#xA;&lt;li&gt;Proxmox - using it as a VM host is new to me, but now part of my home lab&lt;/li&gt;&#xA;&lt;li&gt;PXE network booting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;These extra hands‑on experiments help solidify what I learn in class.&lt;/p&gt;</description>
     </item>
   </channel>
