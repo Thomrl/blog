@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://thomrl.github.io/blog/images/favicon.png" />
+<title>Docker on Raspberrypi | Thomrl&#39;s Blog</title>
+<meta name="title" content="Docker on Raspberrypi" />
+<meta name="description" content="After a lot of trial and error, here is how I installed docker and Miniflux (RSS feed), as well as some commands.
+I&rsquo;m using a RaspberryPi 5, I&rsquo;ve just installed a fresh version of Raspberry Pi OS Lite (64-bit), and I&rsquo;ve updated and upgraded.
+Docker
+
+Install docker
+
+curl -sSL https://get.docker.com | sh
+
+Add your user to the docker group (to properly interact with docker)
+
+sudo usermod -aG docker $USER
+Then reboot and thereafter check if you successfully added yourself to the docker group with the groups command. If docker is mentioned in the output, you did it successfully and should now be ready to use docker." />
+<meta name="keywords" content="linux,software,terminal," />
+
+
+<meta property="og:url" content="https://thomrl.github.io/blog/docker-on-raspberrypi/">
+  <meta property="og:site_name" content="Thomrl&#39;s Blog">
+  <meta property="og:title" content="Docker on Raspberrypi">
+  <meta property="og:description" content="After a lot of trial and error, here is how I installed docker and Miniflux (RSS feed), as well as some commands.
+I’m using a RaspberryPi 5, I’ve just installed a fresh version of Raspberry Pi OS Lite (64-bit), and I’ve updated and upgraded.
+Docker Install docker curl -sSL https://get.docker.com | sh Add your user to the docker group (to properly interact with docker) sudo usermod -aG docker $USER Then reboot and thereafter check if you successfully added yourself to the docker group with the groups command. If docker is mentioned in the output, you did it successfully and should now be ready to use docker.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-03-21T19:20:42+01:00">
+    <meta property="article:modified_time" content="2026-03-21T19:20:42+01:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Software">
+    <meta property="article:tag" content="Terminal">
+    <meta property="og:image" content="https://thomrl.github.io/blog/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://thomrl.github.io/blog/images/share.png">
+  <meta name="twitter:title" content="Docker on Raspberrypi">
+  <meta name="twitter:description" content="After a lot of trial and error, here is how I installed docker and Miniflux (RSS feed), as well as some commands.
+I’m using a RaspberryPi 5, I’ve just installed a fresh version of Raspberry Pi OS Lite (64-bit), and I’ve updated and upgraded.
+Docker Install docker curl -sSL https://get.docker.com | sh Add your user to the docker group (to properly interact with docker) sudo usermod -aG docker $USER Then reboot and thereafter check if you successfully added yourself to the docker group with the groups command. If docker is mentioned in the output, you did it successfully and should now be ready to use docker.">
+
+
+
+
+  <meta itemprop="name" content="Docker on Raspberrypi">
+  <meta itemprop="description" content="After a lot of trial and error, here is how I installed docker and Miniflux (RSS feed), as well as some commands.
+I’m using a RaspberryPi 5, I’ve just installed a fresh version of Raspberry Pi OS Lite (64-bit), and I’ve updated and upgraded.
+Docker Install docker curl -sSL https://get.docker.com | sh Add your user to the docker group (to properly interact with docker) sudo usermod -aG docker $USER Then reboot and thereafter check if you successfully added yourself to the docker group with the groups command. If docker is mentioned in the output, you did it successfully and should now be ready to use docker.">
+  <meta itemprop="datePublished" content="2026-03-21T19:20:42+01:00">
+  <meta itemprop="dateModified" content="2026-03-21T19:20:42+01:00">
+  <meta itemprop="wordCount" content="266">
+  <meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png">
+  <meta itemprop="keywords" content="Linux,Software,Terminal">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/blog/" class="title">
+  <h2>Thomrl&#39;s Blog</h2>
+</a>
+<nav><a href="/blog/">Home</a>
+
+<a href="/blog/now/">Now</a>
+
+
+<a href="/blog/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Docker on Raspberrypi</h1>
+<p>
+  <i>
+    <time datetime='2026-03-21' pubdate>
+      21 Mar, 2026
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>After a lot of trial and error, here is how I installed docker and Miniflux (RSS feed), as well as some commands.</p>
+<p>I&rsquo;m using a RaspberryPi 5, I&rsquo;ve just installed a fresh version of Raspberry Pi OS Lite (64-bit), and I&rsquo;ve updated and upgraded.</p>
+<h3 id="docker">Docker</h3>
+<ol>
+<li>Install docker</li>
+</ol>
+<pre tabindex="0"><code>curl -sSL https://get.docker.com | sh
+</code></pre><ol start="2">
+<li>Add your user to the docker group (to properly interact with docker)</li>
+</ol>
+<pre tabindex="0"><code>sudo usermod -aG docker $USER
+</code></pre><p>Then reboot and thereafter check if you successfully added yourself to the docker group with the <code>groups</code> command. If docker is mentioned in the output, you did it successfully and should now be ready to use docker.</p>
+<p>You can test with the command: <code>docker run hello-world</code></p>
+<hr>
+<h3 id="miniflux">Miniflux</h3>
+<ol>
+<li>Create a new file called &ldquo;docker-compose.yml&rdquo; <em>, without the quotation marks</em>.</li>
+</ol>
+<pre tabindex="0"><code>touch docker-compose.yml   
+</code></pre><ol start="2">
+<li>Edit &ldquo;docker-compose.yml&rdquo;</li>
+</ol>
+<pre tabindex="0"><code>nvim docker-compose.yml
+</code></pre><p><em>nvim, stands for neovim and is a text editor, you can use nano or whichever text editor you prefer.</em></p>
+<ol start="3">
+<li>
+<p>Copy the docker compose example from <a href="https://miniflux.app/docs/docker.html">https://miniflux.app/docs/docker.html</a> into the docker-compose.yml file. Edit the values as you see fit, or you can test if it works as is.</p>
+</li>
+<li>
+<p>When ready to make the Miniflux and Postgres (included in the docker compose example) containers, use the following command</p>
+</li>
+</ol>
+<pre tabindex="0"><code>docker compose up
+</code></pre><p>This will use the docker-compose.yml file in the working directory of the terminal.</p>
+<hr>
+<p>The following commands were useful when I had tried to create containers that didn&rsquo;t work as intended and I found out I needed to remove leftover volumes.<br>
+<code>docker volume ls</code> - list volumes.<br>
+<code>docker volume rm &lt;Volume Name&gt;</code> - delete volume.<br>
+<code>docker compose down</code> - stop a docker compose process.</p>
+<p>Source:
+<a href="https://pimylifeup.com/raspberry-pi-docker/">https://pimylifeup.com/raspberry-pi-docker/</a></p>
+
+</content>
+<p>
+  
+  <a href="https://thomrl.github.io/blog/blog/linux/">#Linux</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/software/">#Software</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/terminal/">#Terminal</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
