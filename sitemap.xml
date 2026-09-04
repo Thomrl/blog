@@ -3,39 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://thomrl.github.io/blog/blog/</loc>
-    <lastmod>2026-03-21T19:20:42+01:00</lastmod>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/blog/cachyos/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/blog/fedora/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/blog/gaming/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/blog/linux/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/blog/reinstall/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/blog/software/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/switching-from-fedora-to-cachyos/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/blog/terminal/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/</loc>
+    <lastmod>2026-09-05T00:52:54+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/setting-up-virtualisation-on-linux/</loc>
+    <lastmod>2026-09-03T20:49:13+02:00</lastmod>
+  </url><url>
+    <loc>https://thomrl.github.io/blog/blog/tips/</loc>
+    <lastmod>2026-09-03T20:49:13+02:00</lastmod>
   </url><url>
     <loc>https://thomrl.github.io/blog/docker-on-raspberrypi/</loc>
     <lastmod>2026-03-21T19:20:42+01:00</lastmod>
   </url><url>
-    <loc>https://thomrl.github.io/blog/blog/linux/</loc>
-    <lastmod>2026-03-21T19:20:42+01:00</lastmod>
-  </url><url>
-    <loc>https://thomrl.github.io/blog/blog/software/</loc>
-    <lastmod>2026-03-21T19:20:42+01:00</lastmod>
-  </url><url>
-    <loc>https://thomrl.github.io/blog/blog/terminal/</loc>
-    <lastmod>2026-03-21T19:20:42+01:00</lastmod>
-  </url><url>
-    <loc>https://thomrl.github.io/blog/</loc>
-    <lastmod>2026-03-21T19:20:42+01:00</lastmod>
-  </url><url>
-    <loc>https://thomrl.github.io/blog/blog/fedora/</loc>
-    <lastmod>2025-10-19T02:08:55+02:00</lastmod>
-  </url><url>
     <loc>https://thomrl.github.io/blog/my-fedora-linux-challenges-and-how-i-solved-them/</loc>
-    <lastmod>2025-10-19T02:08:55+02:00</lastmod>
-  </url><url>
-    <loc>https://thomrl.github.io/blog/blog/tips/</loc>
     <lastmod>2025-10-19T02:08:55+02:00</lastmod>
   </url><url>
     <loc>https://thomrl.github.io/blog/syncthing-on-linux/</loc>
     <lastmod>2025-04-29T02:38:35+02:00</lastmod>
   </url><url>
     <loc>https://thomrl.github.io/blog/fedora-42-gaming-setup/</loc>
-    <lastmod>2025-04-29T01:12:26+02:00</lastmod>
-  </url><url>
-    <loc>https://thomrl.github.io/blog/blog/gaming/</loc>
     <lastmod>2025-04-29T01:12:26+02:00</lastmod>
   </url><url>
     <loc>https://thomrl.github.io/blog/how-to-stay-safe-browsing-the-web/</loc>
@@ -52,9 +64,6 @@
   </url><url>
     <loc>https://thomrl.github.io/blog/github-how-to-push-files-to-a-repository-in-terminal/</loc>
     <lastmod>2024-10-11T16:57:24+02:00</lastmod>
-  </url><url>
-    <loc>https://thomrl.github.io/blog/blog/reinstall/</loc>
-    <lastmod>2024-10-11T13:52:14+02:00</lastmod>
   </url><url>
     <loc>https://thomrl.github.io/blog/blog/windows/</loc>
     <lastmod>2024-10-11T13:52:14+02:00</lastmod>

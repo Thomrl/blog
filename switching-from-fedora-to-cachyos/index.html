@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://thomrl.github.io/blog/images/favicon.png" />
+<title>Switching From Fedora to Cachyos | Thomrl&#39;s Blog</title>
+<meta name="title" content="Switching From Fedora to Cachyos" />
+<meta name="description" content="Putting Fedora on the shelf and trying something new with CachyOS. Went ahead with this on 2026-06-27.
+References I&rsquo;ve used:
+https://wiki.cachyos.org/installation/installation_on_root/ 
+https://discuss.cachyos.org/t/changing-fish-to-bash/1420 
+https://thelinuxbook.com/
+
+Manual partitioning:
+Root / -root
+Boot /boot -boot
+Home /home
+Swap /swap 8192 MiB
+This time I&rsquo;ve put /home on a seperate drive from the rest, in the believe I in the future will have a much smoother time from deciding to reinstall to actually having reinstalled my PC.
+One-liner to install packages I use:" />
+<meta name="keywords" content="CachyOS,fedora,gaming,linux,reinstall,software,terminal," />
+
+
+<meta property="og:url" content="https://thomrl.github.io/blog/switching-from-fedora-to-cachyos/">
+	<meta property="og:site_name" content="Thomrl&#39;s Blog">
+	<meta property="og:title" content="Switching From Fedora to Cachyos">
+	<meta property="og:description" content="Putting Fedora on the shelf and trying something new with CachyOS. Went ahead with this on 2026-06-27.
+References I’ve used:
+https://wiki.cachyos.org/installation/installation_on_root/ https://discuss.cachyos.org/t/changing-fish-to-bash/1420 https://thelinuxbook.com/
+Manual partitioning:
+Root / -root
+Boot /boot -boot
+Home /home
+Swap /swap 8192 MiB
+This time I’ve put /home on a seperate drive from the rest, in the believe I in the future will have a much smoother time from deciding to reinstall to actually having reinstalled my PC.
+One-liner to install packages I use:">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="blog">
+		<meta property="article:published_time" content="2026-09-05T00:52:54+02:00">
+		<meta property="article:modified_time" content="2026-09-05T00:52:54+02:00">
+		<meta property="article:tag" content="CachyOS">
+		<meta property="article:tag" content="Fedora">
+		<meta property="article:tag" content="Gaming">
+		<meta property="article:tag" content="Linux">
+		<meta property="article:tag" content="Reinstall">
+		<meta property="article:tag" content="Software">
+		<meta property="og:image" content="https://thomrl.github.io/blog/images/share.png">
+
+
+
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://thomrl.github.io/blog/images/share.png">
+	<meta name="twitter:title" content="Switching From Fedora to Cachyos">
+	<meta name="twitter:description" content="Putting Fedora on the shelf and trying something new with CachyOS. Went ahead with this on 2026-06-27.
+References I’ve used:
+https://wiki.cachyos.org/installation/installation_on_root/ https://discuss.cachyos.org/t/changing-fish-to-bash/1420 https://thelinuxbook.com/
+Manual partitioning:
+Root / -root
+Boot /boot -boot
+Home /home
+Swap /swap 8192 MiB
+This time I’ve put /home on a seperate drive from the rest, in the believe I in the future will have a much smoother time from deciding to reinstall to actually having reinstalled my PC.
+One-liner to install packages I use:">
+
+
+
+
+	<meta itemprop="name" content="Switching From Fedora to Cachyos">
+	<meta itemprop="description" content="Putting Fedora on the shelf and trying something new with CachyOS. Went ahead with this on 2026-06-27.
+References I’ve used:
+https://wiki.cachyos.org/installation/installation_on_root/ https://discuss.cachyos.org/t/changing-fish-to-bash/1420 https://thelinuxbook.com/
+Manual partitioning:
+Root / -root
+Boot /boot -boot
+Home /home
+Swap /swap 8192 MiB
+This time I’ve put /home on a seperate drive from the rest, in the believe I in the future will have a much smoother time from deciding to reinstall to actually having reinstalled my PC.
+One-liner to install packages I use:">
+	<meta itemprop="datePublished" content="2026-09-05T00:52:54+02:00">
+	<meta itemprop="dateModified" content="2026-09-05T00:52:54+02:00">
+	<meta itemprop="wordCount" content="271">
+	<meta itemprop="image" content="https://thomrl.github.io/blog/images/share.png">
+	<meta itemprop="keywords" content="CachyOS,Fedora,Gaming,Linux,Reinstall,Software,Terminal">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/blog/" class="title">
+  <h2>Thomrl&#39;s Blog</h2>
+</a>
+<nav><a href="/blog/">Home</a>
+
+<a href="/blog/now/">Now</a>
+
+
+<a href="/blog/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Switching From Fedora to Cachyos</h1>
+<p>
+  <i>
+    <time datetime='2026-09-05' pubdate>
+      05 Sep, 2026
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Putting Fedora on the shelf and trying something new with CachyOS. Went ahead with this on 2026-06-27.</p>
+<p>References I&rsquo;ve used:<br>
+<a href="https://wiki.cachyos.org/installation/installation_on_root/">https://wiki.cachyos.org/installation/installation_on_root/</a> <br>
+<a href="https://discuss.cachyos.org/t/changing-fish-to-bash/1420">https://discuss.cachyos.org/t/changing-fish-to-bash/1420</a> <br>
+<a href="https://thelinuxbook.com/">https://thelinuxbook.com/</a></p>
+<hr>
+<p><strong>Manual partitioning:</strong><br>
+Root <code>/</code> -root<br>
+Boot <code>/boot</code> -boot<br>
+Home <code>/home</code><br>
+Swap /swap 8192 MiB</p>
+<p>This time I&rsquo;ve put <code>/home</code> on a seperate drive from the rest, in the believe I in the future will have a much smoother time from deciding to reinstall to actually having reinstalled my PC.</p>
+<p>One-liner to install packages I use:</p>
+<pre tabindex="0"><code>sudo pacman -S whois traceroute protonup-qt drawio-desktop obsidian vscodium syncthing filezilla vlc htop pcsclite pcsc-tools ccid flatpak emacs hugo rpi-imager qalc
+</code></pre><p>reboot</p>
+<pre tabindex="0"><code>flatpak install flathub com.yubico.yubioath
+com.rustdesk.RustDesk
+com.rtosta.zapzap
+</code></pre><p><strong>Commands:</strong><br>
+<code>chsh -s /usr/bin/bash</code> changes the shell <em>(from fish)</em> to bash (reboot for it to take effect).<br>
+<em>I did this to easily use the aliases I&rsquo;ve already made while using Fedora, I might change it later but right now I&rsquo;m busy I want the familiarity of bash</em><br>
+<code>sensors</code> to check temperatures<br>
+<code>nvidia-smi</code> to check nvidia driver and more related to the GPU</p>
+<h2 id="installing-yubico-authenticator">Installing Yubico Authenticator</h2>
+<p>I installed the flatpak but experienced issues.
+The following commands was used while trying to fix it:</p>
+<pre tabindex="0"><code>lsusb
+pcsc_scan
+sudo journalctl -u pcscd -b --no-pager | tail -n 200
+</code></pre><p>The following commands had part in solving the issue:</p>
+<pre tabindex="0"><code>sudo pacman -S --needed ccid pcsclite pcsc-tools
+sudo systemctl enable --now pcscd
+sudo systemctl restart pcscd
+</code></pre><p>What fixed it for me in the end, was installing ccid and restarting pcscd, I&rsquo;m hoping collecting this together makes it easier going forward, and easier for whoever else might need it.</p>
+<hr>
+<p>For setting up virtualization see my other post here: <a href="../setting-up-virtualisation-on-linux">Setting up virtualization on linux</a></p>
+
+</content>
+<p>
+  
+  <a href="https://thomrl.github.io/blog/blog/cachyos/">#CachyOS</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/fedora/">#Fedora</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/gaming/">#Gaming</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/linux/">#Linux</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/reinstall/">#Reinstall</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/software/">#Software</a>
+  
+  <a href="https://thomrl.github.io/blog/blog/terminal/">#Terminal</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
