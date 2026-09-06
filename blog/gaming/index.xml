@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Gaming on Thomrl&#39;s Blog</title>
-		<link>http://localhost:1313/blog/blog/gaming/</link>
+		<link>https://thomrl.github.io/blog/blog/gaming/</link>
 		<description>Recent content in Gaming on Thomrl&#39;s Blog</description>
 		<generator>Hugo</generator>
 		<language>en-US</language>
@@ -14,26 +14,26 @@
 		
 			<lastBuildDate>Sat, 05 Sep 2026 00:52:54 +0200</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/blog/blog/gaming/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://thomrl.github.io/blog/blog/gaming/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Switching From Fedora to Cachyos</title>
-				<link>http://localhost:1313/blog/switching-from-fedora-to-cachyos/</link>
+				<link>https://thomrl.github.io/blog/switching-from-fedora-to-cachyos/</link>
 				<pubDate>Sat, 05 Sep 2026 00:52:54 +0200</pubDate>
-				<guid>http://localhost:1313/blog/switching-from-fedora-to-cachyos/</guid>
-				<description>&lt;p&gt;Putting Fedora on the shelf and trying something new with CachyOS. Went ahead with this on 2026-06-27.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Manual partitioning:&lt;/strong&gt;&lt;br&gt;&#xA;Root &lt;code&gt;/&lt;/code&gt; -root&lt;br&gt;&#xA;Boot &lt;code&gt;/boot&lt;/code&gt; -boot&lt;br&gt;&#xA;Home &lt;code&gt;/home&lt;/code&gt;&lt;br&gt;&#xA;Swap /swap 8192 MiB&lt;/p&gt;&#xA;&lt;p&gt;This time I&amp;rsquo;ve put &lt;code&gt;/home&lt;/code&gt; on a seperate drive from the rest, in the believe I in the future will have a much smoother time from deciding to reinstall to actually having reinstalled my PC.&lt;/p&gt;&#xA;&lt;p&gt;One-liner to install packages I use:&lt;/p&gt;</description>
+				<guid>https://thomrl.github.io/blog/switching-from-fedora-to-cachyos/</guid>
+				<description>&lt;p&gt;Putting Fedora on the shelf and trying something new with CachyOS. Went ahead with this on 2026-06-27.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;manual-partitioning&#34;&gt;Manual partitioning:&lt;/h3&gt;&#xA;&lt;p&gt;Root &lt;code&gt;/&lt;/code&gt; -root&lt;br&gt;&#xA;Boot &lt;code&gt;/boot&lt;/code&gt; -boot&lt;br&gt;&#xA;Home &lt;code&gt;/home&lt;/code&gt;&lt;br&gt;&#xA;Swap &lt;code&gt;/swap&lt;/code&gt; 8192 MiB&lt;/p&gt;&#xA;&lt;p&gt;This time I&amp;rsquo;ve put &lt;code&gt;/home&lt;/code&gt; on a seperate drive from the rest, in the believe I in the future will have a much smoother time from deciding to reinstall to actually having reinstalled my PC.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;initial-adjustments-and-setting-up&#34;&gt;Initial adjustments and setting up&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;I made sure the system was fully up to date.&lt;/li&gt;&#xA;&lt;li&gt;I checked if the Nvidia driver was installed with the &lt;code&gt;nvidia-smi&lt;/code&gt; command.&lt;/li&gt;&#xA;&lt;li&gt;I went to &lt;code&gt;CachyOS Hello &amp;gt; Apps/Tweaks&lt;/code&gt; and made the desired changes.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;code&gt;CachyOS Hello &amp;gt; Apps/Tweaks&lt;/code&gt; I of course pressed &lt;code&gt;Install Gaming Packages&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;From here I started installing the rest of the software I wanted on my system.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;One-liner to install most packages I use:&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Fedora 42 Gaming Setup</title>
-				<link>http://localhost:1313/blog/fedora-42-gaming-setup/</link>
+				<link>https://thomrl.github.io/blog/fedora-42-gaming-setup/</link>
 				<pubDate>Tue, 29 Apr 2025 01:12:26 +0200</pubDate>
-				<guid>http://localhost:1313/blog/fedora-42-gaming-setup/</guid>
+				<guid>https://thomrl.github.io/blog/fedora-42-gaming-setup/</guid>
 				<description>&lt;p&gt;This is a page about »Fedora 42 Gaming Setup«.&lt;/p&gt;&#xA;&lt;p&gt;Here is how I&amp;rsquo;ve setup my machine.&lt;/p&gt;&#xA;&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Snapper (snapshot system for Fedora)&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf in snapper dnf-plugin-snapper btrfs-assistant&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo snapper create-config /&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;nvidia-driver&#34;&gt;Nvidia Driver&lt;/h1&gt;&#xA;&lt;p&gt;Start with purging if there&amp;rsquo;s something needs to go.&lt;br&gt;&#xA;&lt;code&gt;sudo dnf remove xorg-x11-drv-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove akmod-nvidia\*&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo dnf remove nvidia-vaapi-driver&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;These are needed to compile modules and DKMS&lt;/strong&gt;&lt;br&gt;&#xA;&lt;code&gt;sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig xorg-x11-server-Xwayland libxcb egl-wayland&lt;/code&gt;&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Fedora Gaming Setup Guide</title>
-				<link>http://localhost:1313/blog/fedora-gaming-setup-guide/</link>
+				<link>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</link>
 				<pubDate>Tue, 06 Aug 2024 20:36:57 +0200</pubDate>
-				<guid>http://localhost:1313/blog/fedora-gaming-setup-guide/</guid>
+				<guid>https://thomrl.github.io/blog/fedora-gaming-setup-guide/</guid>
 				<description>&lt;p&gt;This is a page about »Fedora Gaming Setup Guide«&#xA;This is how I&amp;rsquo;ve setup my system for gaming, this is all done on Fedora 40 &lt;a href=&#34;https://fedoraproject.org/workstation/&#34;&gt;https://fedoraproject.org/workstation/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;speed-up-dnf&#34;&gt;Speed up DNF&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo nano /etc/dnf/dnf.conf&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Add this:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;max_parallel_downloads=20&#xA;fastestmirror=True&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;I actually didn&amp;rsquo;t add the second line &amp;ldquo;fastestmirror=True&amp;rdquo;, I also haven&amp;rsquo;t felt like I needed it. So &amp;ldquo;max_parallel_downloads&amp;rdquo; might be all you need, and you can set it to whichever number suits you. I set mine to 20 because my internet is great.&lt;/em&gt;&lt;/p&gt;</description>
 			</item>
 	</channel>
